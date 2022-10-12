@@ -7,10 +7,11 @@
     "scripts": {
         "watch:sass": "sass --watch src/_includes/style:_site/style --style compressed",
         "build:sass": "sass src/_includes/style:_site/style --style compressed",
-        "build:tailwind": "npx tailwindcss -i ./src/_includes/style/tailwind.css -o ./_site/style/tailwind.css --minify --watch",
+        "watch:tailwind": "npx tailwindcss -i ./src/_includes/style/tailwind.css -o ./_site/style/tailwind.css --watch",
+        "build:tailwind": "npx tailwindcss -i ./src/_includes/style/tailwind.css -o ./_site/style/tailwind.css --minify",
         "watch:eleventy": "npx @11ty/eleventy --serve",
         "build:eleventy": "npx @11ty/eleventy",
-        "start": "npm-run-all build:sass  --parallel watch:* build:tailwind",
+        "start": "npm-run-all build:sass  --parallel watch:* watch:tailwind",
         "build": "npm-run-all build:*"
     },
     "keywords": [],

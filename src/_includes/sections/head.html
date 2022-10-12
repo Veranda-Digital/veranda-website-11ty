@@ -1,7 +1,7 @@
 <head>
     <meta charset="UTF-8" />
 
-    <title>{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{{ site.title}}</title>
     <meta name="description" content="{% block description %}{{ site.description }}{% endblock %}" />
     <meta name="robots" content="index,follow" />
     <meta name="copyright" content="Nic Durish 2022" />
@@ -35,6 +35,8 @@
     <meta property="og:site_name" content="{{ site.title }}" />
     <meta property="og:locale" content="{{ site.lang }}" />
     <meta property="article:author" content="{{ site.url }}" />
+
+    {% include "../partials/analytics.html" %}
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png" />
