@@ -10,6 +10,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.setUseGitIgnore(false);
 
     // eleventyConfig.addPassthroughCopy('style');
+    eleventyConfig.addPassthroughCopy('src/_redirects');
 
     // Eleventy configuration
     return {
