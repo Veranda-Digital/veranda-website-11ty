@@ -1,0 +1,12 @@
+// _src/sass/main.scss
+
+@import 'tailwind.css';
+
+body {
+    font-family: sans-serif;
+    color: green;
+}
+
+.viewport-bottom {
+    color: blue !important;
+}
