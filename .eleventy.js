@@ -12,6 +12,11 @@ module.exports = function (eleventyConfig) {
     // eleventyConfig.addPassthroughCopy('style');
     eleventyConfig.addPassthroughCopy('src/_redirects');
 
+    eleventyConfig.addWatchTarget('./styles/tailwind.config.js');
+    eleventyConfig.addWatchTarget('./styles/tailwind.css');
+
+    eleventyConfig.addPassthroughCopy({ './_tmp/style.css': './style.css' });
+
     // Eleventy configuration
     return {
         dir: {
@@ -22,7 +27,7 @@ module.exports = function (eleventyConfig) {
 
         // Files read by Eleventy, add as needed
         markdownTemplateEngine: 'html',
-        templateFormats: ['css', 'html', 'md', 'txt', 'liquid', 'jpg', 'gif', 'png', 'webmanifest'],
+        templateFormats: ['html', 'md', 'txt', 'liquid', 'jpg', 'gif', 'png', 'webmanifest'],
         passthroughFileCopy: true
     };
 };
