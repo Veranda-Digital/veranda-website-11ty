@@ -1,1 +1,12 @@
-<div class="p-4 pt-2 underline">{% render "./section_content/hero.md" %}</div>
+<div class="bg-slate">
+    <div class="min-h-screen rounded-bl-[8em] bg-primary">
+        <div>
+            <nav><img alt="Veranda Logo" /><button>{{site.signUpBtn}}</button></nav>
+            <div>
+                <h1>{{site.topHeader}}</h1>
+                <p>{% render "./section_content/hero.md" %}</p>
+                <p>Learn More</p>
+            </div>
+        </div>
+    </div>
+</div>

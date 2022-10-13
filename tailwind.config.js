@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+    mode: 'jit',
     content: ['./_site/**/*.{html,js, sass}'],
     plugins: [],
     theme: {
@@ -21,8 +22,9 @@ module.exports = {
         },
         fontFamily: {
             sans: ['test_national_2regular', 'sans-serif'],
-            sansmd: ['test_national_2medium', 'sans-serif'],
+            sansmd: ['test_national_2bold', 'serif'],
             sansb: ['test_national_2bold', 'sans-serif'],
+            sansl: ['test_national_2light', 'test_national_2regular', 'sans-serif'],
             basic: ['Roboto', 'sans-serif'],
             serif: ['Merriweather', 'serif']
         },
@@ -31,7 +33,8 @@ module.exports = {
             sm: '0.8rem',
             base: '1rem',
             med: '1.25rem',
-            lg: '1.65rem',
+            lg: '1.50rem',
+            lgr: '2rem',
             xlg: ['2.2rem', '45px'],
             xxlg: ['3rem', '60px'],
             xxxlg: ['4rem', '75px']

@@ -4,8 +4,13 @@ module.exports = {
     // adjusted pending your host
     url: 'https://getveranda.netlify.com',
     title: 'Veranda Digital Inc',
-    description: 'A starter template to build websites with Ghost & Eleventy TESTTESTTEST',
+    description: 'Making food deliveries more convenient, secure, and manageable',
     authorName: 'Nic Durish',
     lang: 'en',
-    twitter: '' // no `@`
+
+    topHeader: 'Deliver Better',
+    signUpBtn: 'Sign Up For Updates',
+
+    solutionHeader: 'The Veranda Solution To',
+    solutionSubHeader: 'The Most Inconvenient Convenience'
 };
