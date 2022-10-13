@@ -4,17 +4,17 @@ module.exports = {
     plugins: [],
     theme: {
         screens: {
-            tiny: '100px',
-            mobile: '324px',
-            tablet: '767px',
-            desktop: '991px',
-            tv: '1200px',
-            fourk: '2000px'
+            ztiny: '200px',
+            zmobile: '324px',
+            ztablet: '767px',
+            zdesktop: '1025px',
+            ztv: '2400px'
         },
         colors: {
             white: '#ffffff',
             black: '#000000',
 
+            primary: '#1c5141',
             slate: '#23252c',
             cream: '#f7f6f1',
             salmon: '#ff9393'
@@ -30,14 +30,16 @@ module.exports = {
             xsm: '0.6rem',
             sm: '0.8rem',
             base: '1rem',
-            lg: '1.35rem',
-            xlg: '2.3rem',
-            xxlg: ['4rem', '75px']
+            med: '1.25rem',
+            lg: '1.65rem',
+            xlg: ['2.2rem', '45px'],
+            xxlg: ['3rem', '60px'],
+            xxxlg: ['4rem', '75px']
         },
         extend: {
             backgroundImage: {
-                hero: "url('../public/images/hero.jpg')",
-                enviro: "url('../assets/bg-trees.png')"
+                midbanner: "url('../assets/mid-banner.png')",
+                enviro: "url('../assets/enviro.png')"
             },
             spacing: {
                 128: '32rem',

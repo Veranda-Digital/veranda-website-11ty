@@ -5,6 +5,15 @@ body {
     position: relative;
 }
 
+::selection {
+    background: rgba(28, 81, 65, 0.5);
+}
+
+mark {
+    background-color: #f4d379;
+    color: #1c5141;
+}
+
 /*************
 SUPER-GENERAL STYLES
 **************/
