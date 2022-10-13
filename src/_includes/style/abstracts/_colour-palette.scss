@@ -1,47 +1,5 @@
 :root {
-    /*General Colours*/
-    --color-navy: #21759b;
-    --color-navy-dark: #174f87;
-    --color-red: #dd3333;
-    --color-red-dull: #fd6d81;
-    --color-red-dark: #ae1a1a;
-    --color-green-dark: #075a12;
-    --color-purple: #075a12;
-
-    --color-white: 255, 255, 255;
-    --color-gray-02: #f9f9f9;
-    --color-gray-04: #f5f5f5;
-    --color-gray-07: #eee;
-    --color-gray-10: #e5e5e5;
-    --color-gray-13: #ddd;
-    --color-gray-27: #bbb;
-    --color-gray-50: #808080;
-    --color-gray-60: #666;
-    --color-gray-67: #595959;
-    --color-gray-73: #444;
-    --color-gray-80: #333;
-    --color-gray-86: #282828;
-    --color-gray-93: 19, 19, 19;
-    --color-black: #000;
-
-    --color-primary: 21, 35, 53;
-    --color-primary-light: #294568;
-    --color-primary-lighter: #4f719b;
-    --color-secondary: #cf9623;
 }
 
 [data-theme='light'] {
-    --color-white-black: 4, 6, 8;
-    --color-black-white: 255, 255, 255;
-
-    --color-splash-primary: 255, 255, 255;
-    --color-splash-secondary: 21, 35, 53;
-    --color-splash-bar: var(--color-splash-secondary);
-    --color-splash-bar-active: var(--color-splash-secondary2);
-
-    --color-splash-background2: 231, 230, 240;
-    --color-splash-bar2: 231, 230, 240;
-
-    --color-splash-background3: 213, 235, 230;
-    --color-splash-background4: 255, 255, 255;
 }

@@ -1,55 +1,60 @@
 /*--------------------------------------------------------------
   ## Accessibility
 --------------------------------------------------------------*/
-.screen-reader-text, .sr-only, .hideStuff {
-	position: absolute !important;
-  clip: rect(0,0,0,0);
-  border: 0;
-	overflow: hidden;
-  padding: 0;
-  margin: -1px;
-	height: 1px;
-	width: 1px;
+.screen-reader-text,
+.sr-only,
+.hideStuff {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: -1px;
+    height: 1px;
+    width: 1px;
 
-	&:hover, &:active, &:focus {
-		background: var(--color-white);
-		border: 2px solid var(--color-gray-80);
-		border-radius: 3px;
-		clip: auto !important;
-		color: var(--color-black);
-		display: block;
-		font-size: 12px;
-		height: auto;
-		padding: 12px;
-		position: absolute;
-		top: 5px;
-		left: 5px;
-		width: auto;
-		z-index: 100000; /* Above WP toolbar */
-	}
+    &:hover,
+    &:active,
+    &:focus {
+        background: white;
+        border: 2px solid grey;
+        border-radius: 3px;
+        clip: auto !important;
+        color: black;
+        display: block;
+        font-size: 12px;
+        height: auto;
+        padding: 12px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: auto;
+        z-index: 100000; /* Above WP toolbar */
+    }
 }
 
 a.screenreader {
-    position:absolute;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
-    z-index:-999;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
 }
-a.screenreader:focus, a.screenreader:active {
+a.screenreader:focus,
+a.screenreader:active {
     color: #fff;
-    background-color:#000;
+    background-color: #000;
     left: auto;
     top: auto;
     width: 30%;
     height: auto;
-    overflow:auto;
+    overflow: auto;
     margin: 10px 35%;
-    padding:5px;
+    padding: 5px;
     border-radius: 15px;
-    border:4px solid yellow;
-    text-align:center;
-    font-size:1.2em;
-    z-index:999;
+    border: 4px solid yellow;
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 999;
 }

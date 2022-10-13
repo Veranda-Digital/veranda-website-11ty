@@ -1,10 +1,11 @@
 ---
 title: Veranda
 layout: 'layouts/default.html'
-redirect_to: /new
 ---
 
-<main>
-    <nav>{{ title }}</nav>
-    <section>{% include "sections/hero.html" %}</section>
-</main>
+<!-- <nav>{{ title }}</nav> -->
+<section class="min-h-screen w-full">{% include "sections/hero.html" %}</section>
+
+<section class="w-full">{% include "sections/enviro.html" %}</section>
+
+<section class="w-full">{% include "sections/updates.html" %}</section>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang }}" class="no-js">
-    {% include "sections/head.html" %}
+    {% include "partials/head.html" %}
 
     <body>
         <div class="viewport">
-            <main>
+            <main class="min-h-screen">
                 {{ content }}
-                <footer>{% include "sections/footer.html" %}</footer>
+                <footer class="bottom">{% include "sections/footer.html" %}</footer>
             </main>
         </div>
     </body>

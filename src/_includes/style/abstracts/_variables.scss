@@ -1,64 +1,11 @@
 /***************************
 * BASE SETTINGS
 ****************************/
-// $fontmain: calc(14px + (6) * ((100vw - 300px) / (1600 - 300)));
-$fontmain: calc(12px + 0.15vw);
-$linemain: 1.85em;
-$font5: calc(0.5vw + 23px);
 
 /***************************
 * COLOR CODES
 ****************************/
 
-
-
 /***************************
 * SCHEME CODES
 ****************************/
-$big_breakpoint: 1050px;
-$breakpoint: 800px;
-$small_breakpoint: 600px;
-
-
-
-
-
-
-
-/***************************
-* LAYOUTS
-****************************/
-$page-div-background: var(--color-gray-10);
-$index-background: var(#152335);
-$default-background: #e8e7e5; //Off White
-
-
-$post-title: var(--color-secondary);
-$post-header: var(--color-white);
-$post-text: #55585a;
-
-
-
-/***************************
-* OLD NAVBAR (STILL USED FOR 404 and PDFViewer)
-****************************/
-$nav: var(--color-white);
-$nav-hover: var(--color-secondary);
-$nav-current: var(--color-secondary);
-$nav-back: var(#152335);
-$fixed-nav-back: #323639; //PDFViewer Colour
-
-$nav-mobile-back: var(--color-primary-light);
-$nav-mobile-back-drop: var(--color-primary-lighter);
-$nav-mobile-back-hover: var(#152335);
-$nav-mobile-hover: var(--color-secondary);
-
-$affix: gray;
-$index-footer: white;
-$index-footer-hover: var(--color-secondary);
-
-
-
-
-
-

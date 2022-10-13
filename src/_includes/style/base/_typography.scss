@@ -5,52 +5,50 @@
 
 body,
 html {
-  scroll-behavior: smooth;
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  font-display: auto;
-  font-size: $fontmain;
-  line-height: $linemain;
-  // height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-display: auto;
+    // height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-      height: auto;
+body {
+    height: auto;
     margin-bottom: -10px;
 }
 
 h2 {
-  font-weight: 500;
-  font-size: 2em;
+    font-weight: 500;
+    font-size: 2em;
 }
 
 h3 {
-  margin: 0;
-  font-weight: 450;
+    margin: 0;
+    font-weight: 450;
 }
 
 p {
-  font-weight: 300;
+    font-weight: 300;
 }
 
 a {
-  cursor: pointer;
-  text-decoration: underline;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 a:hover {
-  // color: var(--color-red-dull);
+    // color: var(--color-red-dull);
 }
 
 code {
-  color: transparent;
-  font-size: 0;
+    color: transparent;
+    font-size: 0;
 }
 
 section {
-  h2 {
-    text-align: left;
-  }
+    h2 {
+        text-align: left;
+    }
 }

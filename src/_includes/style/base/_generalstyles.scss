@@ -1,72 +1,56 @@
-.page-div {
-  background-color: $page-div-background;
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
 }
-
-.page-content {
-  max-width: 1500px;
-  margin: auto;
-  width: calc(85vw + 20px);
-}
-
-.fullpdf {
-  width: 100%;
-  height: calc(100vh - 65px);
-  display: block;
-}
-
-.holds-the-iframe {
-  background: url("../img/gif/loading.gif") center center no-repeat;
-  background-size: 80px;
-}
-
 
 /*************
 SUPER-GENERAL STYLES
 **************/
 .thin {
-  font-style: thin;
-  font-weight: 100;
-  -webkit-font-smoothing: antialiased;
+    font-style: thin;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
 }
 
 .thick {
-  font-style: bold;
+    font-style: bold;
 }
 
 .center {
-  text-align: center;
+    text-align: center;
 }
 
 .fullcontainer {
-  width: 100%;
+    width: 100%;
 }
 
 .circle {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 .row {
-  vertical-align: top;
+    vertical-align: top;
 }
 
 .px2 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .centered-container {
-  margin: auto;
-  vertical-align: middle;
+    margin: auto;
+    vertical-align: middle;
 }
 
 /*************
 OVERRIDES *careful y'all
 **************/
 .displaynone {
-  display: none !important;
+    display: none !important;
 }
 
-.negz{
-  z-index: -1 !important;
+.negz {
+    z-index: -1 !important;
 }
-
