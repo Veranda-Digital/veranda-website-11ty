@@ -5,6 +5,15 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: src/_includes/sections/section_content
+  label: Sections
+  create: none
+  match: "**/*"
+- type: document
+  path: src/_includes/sections/section_content
+  label: test
+  match: "**/*"
+- type: directory
   path: src/sections/section_content
   label: Hero
   create: all
