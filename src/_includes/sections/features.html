@@ -11,8 +11,8 @@
             <div>
                 <!-- Sub-section 1 -->
                 <div class="pb-16 ztablet:flex ztablet:flex-row">
-                    <div style="flex: 1 0 48%" class="p-6 ztablet:h-[12em] zdesktop:h-[14.5em]">{% render "../partials/featuresImg1.html" %}</div>
-                    <div style="flex: 1 0 52%" class="text-center ztablet:text-left">
+                    <div style="flex: 1 0 48%" class="p-6">{% render "../partials/featuresImg1.html" %}</div>
+                    <div style="flex: 1 0 52%" class="relative z-10 m-auto text-center ztablet:text-left">
                         <h4 class="pb-3 text-lg tracking-tight zdesktop:text-lgr">{{site.featuresSecHead1}}</h4>
                         <hr class="font-med mx-auto mb-4 h-[5] w-24 border-[2px] border-solid bg-salmon text-salmon ztablet:mx-0" />
                         <p class="text-med zdesktop:text-lg">{% render "./section_content/features1.md" %}</p>
@@ -20,15 +20,23 @@
                 </div>
 
                 <!-- Sub-section 2 -->
-                <div>
-                    <div></div>
-                    <div>{% render "./section_content/features2.md" %}</div>
+                <div class="pb-16 ztablet:flex ztablet:flex-row">
+                    <div style="flex: 1 0 48%" class="p-6">{% render "../partials/featuresImg1.html" %}</div>
+                    <div style="flex: 1 0 52%" class="relative z-10 m-auto text-center ztablet:text-left">
+                        <h4 class="pb-3 text-lg tracking-tight zdesktop:text-lgr">{{site.featuresSecHead2}}</h4>
+                        <hr class="font-med mx-auto mb-4 h-[5] w-24 border-[2px] border-solid bg-salmon text-salmon ztablet:mx-0" />
+                        <p class="text-med zdesktop:text-lg">{% render "./section_content/features2.md" %}</p>
+                    </div>
                 </div>
 
                 <!-- Sub-section 3 -->
-                <div>
-                    <div></div>
-                    <div>{% render "./section_content/features3.md" %}</div>
+                <div class="pb-16 ztablet:flex ztablet:flex-row">
+                    <div style="flex: 1 0 48%" class="p-6">{% render "../partials/featuresImg1.html" %}</div>
+                    <div style="flex: 1 0 52%" class="relative z-10 m-auto text-center ztablet:text-left">
+                        <h4 class="pb-3 text-lg tracking-tight zdesktop:text-lgr">{{site.featuresSecHead3}}</h4>
+                        <hr class="font-med mx-auto mb-4 h-[5] w-24 border-[2px] border-solid bg-salmon text-salmon ztablet:mx-0" />
+                        <p class="text-med zdesktop:text-lg">{% render "./section_content/features3.md" %}</p>
+                    </div>
                 </div>
             </div>
         </div>
