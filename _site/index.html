@@ -91,7 +91,7 @@
             <main class="min-h-screen">
                 
 <!-- <nav>Veranda</nav> -->
-<section id="hero" class="w-full"><div class="bg-slate">
+<section id="hero" class="relative w-full"><div class="bg-slate">
     <div class="bg-primary  ztablet:rounded-bl-[8em]">
         <div class="relative">
             <div class="hero-bg relative ztablet:top-[-10em]"></div>
@@ -112,18 +112,18 @@
                 <!-- Text -->
                 <div style="flex: 1 0 37%;" class="m-auto w-[86vw] max-w-7xl text-center text-white ztablet:pl-12 ztablet:text-left ztablet:pt-[12em] zdesktop:pt-[8em] zdesktop:pl-20">
                     <h1 class="font-sansl text-xlg tracking-tight ztablet:pb-10 ztablet:text-huge ztv:text-xhuge">Deliver Better</h1>
-                    <p class="ztablet:pl-3 pb-6 text-med leading-6 ztablet:text-xlg ztv:text-xxlg ztablet:pr-10">We make food deliveries more convenient, secure, and manageable.
+                    <p class="ztablet:pl-3 pb-10 text-med leading-6 ztablet:text-xlg ztv:text-xxlg ztablet:pr-10">We make food deliveries more convenient, secure, and manageable.
 </p>
-                    <a href="#solution" class=" text-brightgreen font-sanm  text-sm ztablet:pl-3 ztablet:text-med ztablet:pt-10 ">
-                        <p class=" leading-[0.8em] ztablet:inline">Learn More</p><span class="material-icons ztablet:top-[6px] relative">expand_more</span>
+                    <a href="#solution" class=" text-brightgreen font-sanm  text-sm  ztablet:text-med ztablet:pt-10 ">
+                        <p class=" ztablet:pl-3 leading-[0.8em] ztablet:inline">Learn More</p><span class="material-icons ztablet:top-[6px] relative">expand_more</span>
                     </a>
                 </div>
 
                 <!-- Pictures -->
                 <div style="flex: 1 0 50%;" class="relative t-0 l-0">
-                    <img class="object-cover rounded-bl-[6em] h-[18em] zmobile:h-[23em] ztablet:h-[45em] ztablet:rounded-tl-[50em] ztablet:rounded-bl-[0px]" src="./assets/hero_1.png"></img>
+                    <img alt="Porch with swinging chair" class="object-cover rounded-bl-[6em] h-[18em] zmobile:h-[23em] ztablet:h-[45em] ztablet:rounded-tl-[50em] ztablet:rounded-bl-[0px]" src="./assets/hero_1.png"></img>
                     <div class="h-[calc(36vw/2)] ztablet:h-[calc(16vw/2)] max-h-[6em]">
-                        <img class="absolute right-0 left-0 m-auto bottom-0 object-cover rounded-bl-[6em] w-[100vw] max-w-2xl ztablet:w-[50vw]" src="./assets/hero_box.png"></img>
+                        <img alt="Veranda Box Render" class="absolute right-0 left-0 m-auto bottom-0 object-cover w-[100vw] max-w-2xl ztablet:w-[50vw]" src="./assets/hero_box.png"></img>
                     </div>
                 </div>
             </div>
@@ -132,7 +132,7 @@
 </div>
 </section>
 
-<section id="solution" class="w-full"><div class="bg-slate pt-12 pb-3 ztablet:pt-20">
+<section id="solution" class="relative w-full"><div class="bg-slate pt-12 pb-3 ztablet:pt-20">
     <div class="m-auto w-[86vw] max-w-7xl">
         <div>
             <h2 class="text-center font-sans text-base font-bold leading-[1.5] tracking-tight text-salmon ztablet:text-lg ztablet:leading-[1]">
@@ -148,7 +148,7 @@ Introducing <b>Veranda</b>, the world’s most sensible delivery system.
 </div>
 </section>
 
-<section id="video" class="w-full"><div class="m-auto h-[calc(100vw/4)] max-h-[24em] bg-slate text-center ztablet:h-[calc(80vw/4)]">
+<section id="video" class="relative w-full"><div class="m-auto h-[calc(100vw/4)] max-h-[24em] bg-slate text-center ztablet:h-[calc(80vw/4)]">
     <!-- <iframe
         title="Veranda Promotional Video"
         class="m-auto rounded-[2em]"
@@ -168,36 +168,37 @@ Introducing <b>Veranda</b>, the world’s most sensible delivery system.
 </div>
 </section>
 
-<section id="system" class="w-full"><div class="bg-cream pt-[calc(140vw/4)] ztablet:pt-[min(calc(100vw/4),24em)]">
+<section id="system" class="relative z-[-1] w-full bg-cream"><div class="system-bg relative"></div>
+<div class="relative z-10 pt-[calc(140vw/4)] ztablet:pt-[min(calc(100vw/4),24em)] zdesktop:pt-[min(calc(100vw/4),28em)]">
     <div class="m-auto w-[86vw] max-w-[100em]">
         <div>
             <h2 class="text-center font-sans text-base font-bold leading-[1.5] tracking-tight text-salmon ztablet:text-lg ztablet:leading-[1]">
                 The Veranda System Is
             </h2>
-            <h3 class="pb-8 text-center font-sansmd text-lg font-bold leading-[1.2] tracking-tight text-slate ztablet:text-lgr">A Seamless Delivery Experience</h3>
+            <h3 class="text-center font-sansmd text-lg font-bold leading-[1.2] tracking-tight text-slate ztablet:text-lgr">A Seamless Delivery Experience</h3>
         </div>
 
         <!-- Columns -->
-        <div class="flex flex-col items-center ztablet:flex-row ztablet:justify-around ztablet:text-center">
-            <div class="pb-16 ztablet:max-w-[24em]">
-                <div class="p-6 pt-12 ztablet:h-[12em]">
+        <div class="flex flex-col items-center ztablet:text-center zdesktop:flex-row zdesktop:justify-around zdesktop:p-12">
+            <div class="pb-16 ztablet:mx-10 ztablet:max-w-[34em]">
+                <div class="p-6 pt-12 ztablet:h-[12em] zdesktop:h-[14.5em]">
                     <img class="m-auto w-36 min-w-[6em] zdesktop:w-52" src="./assets/icons/icon-temp.svg" alt="Veranda Logo" />
                 </div>
                 <div>
-                    <h4 class="pb-1 text-center text-lg">Delivery Box</h4>
-                    <hr class="font-med m-auto mb-3 h-[5] w-24 border-[2px] border-solid text-salmon" />
-                    <p class="text-med">Your perishables protected from spoiling and theft in this climate controlled Deliver Box. This means an end to food spoilage, receiving deliveries in the state they should be in, regardless of the weather.
+                    <h4 class="pb-3 text-center text-lg ztablet:text-xlg">Delivery Box</h4>
+                    <hr class="font-med m-auto mb-4 h-[5] w-24 border-[2px] border-solid bg-salmon text-salmon" />
+                    <p class="text-med ztablet:text-lg">Your perishables protected from spoiling and theft in this climate controlled Deliver Box. This means an end to food spoilage, receiving deliveries in the state they should be in, regardless of the weather.
 </p>
                 </div>
             </div>
-            <div class="pb-16 ztablet:max-w-[24em]">
-                <div class="p-6 ztablet:h-[12em]">
+            <div class="pb-16 ztablet:mx-10 ztablet:max-w-[34em]">
+                <div class="p-6 ztablet:h-[12em] zdesktop:h-[14.5em]">
                     <img class="m-auto w-24 min-w-[6em] zdesktop:w-32" src="./assets/icons/icon-dashboard.svg" alt="Veranda Logo" />
                 </div>
                 <div>
-                    <h4 class="pb-1 text-center text-lg">Delivery Dashboard</h4>
-                    <hr class="font-med m-auto mb-3 h-[5] w-24 border-[2px] border-solid text-salmon" />
-                    <p class="text-med">Gain visibility into when deliveries are expected. Deliveries are secured and controlled by the app, with access proivded via Bluetooth, manually or automatically on schedule.
+                    <h4 class="pb-3 text-center text-lg ztablet:text-xlg">Delivery Dashboard</h4>
+                    <hr class="font-med m-auto mb-4 h-[5] w-24 border-[2px] border-solid bg-salmon text-salmon" />
+                    <p class="text-med ztablet:text-lg">Gain visibility into when deliveries are expected. Deliveries are secured and controlled by the app, with access proivded via Bluetooth, manually or automatically on schedule.
 </p>
                 </div>
             </div>
@@ -206,7 +207,7 @@ Introducing <b>Veranda</b>, the world’s most sensible delivery system.
 </div>
 </section>
 
-<section id="mid_banner" class="w-full"><div class="bg-cream">
+<section id="mid_banner" class="relative w-full"><div class="bg-cream">
     <div style="background-size: 110%; background-position: 50% 63%" class="rounded-tl-[8em] rounded-br-[8em] bg-midbanner">
         <div class="m-auto w-full max-w-7xl p-6 pt-24 pb-24 ztablet:p-32 zdesktop:p-40">
             <p class="text-center font-sansb text-med font-bold tracking-tight text-white ztiny:text-lg zmobile:text-xlg ztablet:text-xxlg zdesktop:text-xxxlg">
@@ -218,10 +219,23 @@ Introducing <b>Veranda</b>, the world’s most sensible delivery system.
 </div>
 </section>
 
-<section id="features" class="w-full"><div class="h-128 bg-cream">werwerwwererwerwe</div>
+<section id="features" class="relative w-full"><div class="bg-cream pt-12 pb-3 ztablet:pt-20">
+    <div class="m-auto w-[86vw] max-w-7xl">
+        <div>
+            <h2 class="text-center font-sans text-base font-bold leading-[1.5] tracking-tight text-salmon ztablet:text-lg ztablet:leading-[1]">
+                The Veranda Solution To
+            </h2>
+            <h3 class="pb-8 text-center font-sansmd text-lg font-bold leading-[1.2] tracking-tight text-white ztablet:text-lgr">The Most Inconvenient Convenience</h3>
+        </div>
+        <div class="pb-10 text-med text-white ztablet:text-center ztablet:text-lgr">Waiting around for delivery windows is a hassle, and leaving packages outside makes them vulnerable to theft or spoiling. If only <i>getting</i> deliveries was as easy as <i>ordering</i> them.
+<br><br>
+Introducing <b>Veranda</b>, the world’s most sensible delivery system.
+</div>
+    </div>
+</div>
 </section>
 
-<section id="enviro" class="w-full"><div class="bg-enviro bg-cover">
+<section id="enviro" class="relative w-full"><div class="bg-enviro bg-cover">
     <div class="m-auto w-full max-w-7xl p-6 pt-16 pb-16 ztablet:p-28 zdesktop:p-40">
         <h2 class="pb-3 text-center font-sans text-base font-bold text-salmon ztablet:text-lg">Veranda's Environmental Impact</h2>
         <p class="text-center font-sansb text-med font-bold tracking-tight text-white ztiny:text-lg zmobile:text-xlg ztablet:text-xxlg zdesktop:text-xxxlg">
@@ -232,7 +246,7 @@ Introducing <b>Veranda</b>, the world’s most sensible delivery system.
 </div>
 </section>
 
-<section id="updates" class="w-full"><div class="h-128 bg-cream">werwerwweresdfrwerwe</div>
+<section id="updates" class="relative w-full"><div class="h-128 bg-cream">werwerwweresdfrwerwe</div>
 </section>
 
                 <footer class="bottom"><div class="w-full bg-slate p-4 text-center text-cream">
