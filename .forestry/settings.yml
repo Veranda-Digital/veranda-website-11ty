@@ -4,14 +4,9 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: directory
-  path: src/_includes/sections/section_content
-  label: Sections
-  create: none
-  match: "**/*"
 - type: document
-  path: src/_includes/sections/section_content
-  label: test
+  path: src/_includes/sections/section_content/hero.html
+  label: Hero
   match: "**/*"
 - type: directory
   path: src/sections/section_content
