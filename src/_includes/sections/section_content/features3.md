@@ -1,0 +1,1 @@
+Have full management of the box remotely using the Veranda Dashboard App. See what’s been delivered, the temperature of the box, and more, conveniently form your smartphone. It also integrates with all your favorite online stores so you can manages all your deliveries from in one place.

@@ -9,6 +9,7 @@ module.exports = {
             zmobile: '324px',
             ztablet: '767px',
             zdesktop: '1025px',
+            zlgdesktop: '1225px',
             ztv: '2400px'
         },
         colors: {
@@ -34,10 +35,10 @@ module.exports = {
             sm: '0.8rem',
             base: '1rem',
             med: '1.25rem',
-            lg: '1.50rem',
+            lg: ['1.5rem', '34px'],
             lgr: '2rem',
             xlg: ['2.2rem', '45px'],
-            xxlg: ['2.8rem', '60px'],
+            xxlg: ['2.8rem', '56px'],
             xxxlg: ['4rem', '75px'],
             huge: ['9.5rem', '120px'],
             xhuge: ['12rem', '10rem']
