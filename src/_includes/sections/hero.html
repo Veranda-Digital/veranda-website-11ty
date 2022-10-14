@@ -1,14 +1,28 @@
 <div class="bg-slate">
-    <div class="min-h-[calc(100vh-1em)] rounded-bl-[8em] bg-primary">
-        <div class="bg-herobgg">
+    <div class="bg-primary  ztablet:rounded-bl-[8em]">
+        <div class="relative">
+            <div class="hero-bg relative bg-herobgg "></div>
             {% include "../partials/nav.html" %}
-            <div class="grid-cols-2">
-                <div>
-                    <h1 class="font-sansl text-xxlg">{{site.topHeader}}</h1>
-                    <p class="font-sansl text-huge"></p>>{% render "./section_content/hero.md" %}</p>
-                    <p class="font-sansl text-huge"></p>>Learn More</p>
+
+            <!-- Columns -->
+            <div class="max-w-[120em] m-auto between relative flex flex-col-reverse justify-center pb-4 ztablet:flex-row">
+
+                <!-- Text -->
+                <div style="flex: 1 0 50%;" class="m-auto w-[86vw] max-w-7xl text-center text-white">
+                    <h1 class="font-sansl text-xlg tracking-tight ztablet:text-xxlg">{{site.topHeader}}</h1>
+                    <p class="pb-6 text-med leading-6">{% render "./section_content/hero.md" %}</p>
+                    <div class=" text-brightgreen ">
+                        <p class="font-sanm text-sm leading-[0.8em]">Learn More</p><span class="material-icons">expand_more</span>
+                    </div>
                 </div>
-                <div></div>
+
+                <!-- Pictures -->
+                <div style="flex: 1 0 50%;" class="relative t-0 l-0">
+                    <img class="object-cover rounded-bl-[6em] h-[18em] zmobile:h-[23em] ztablet:h-[50em] ztablet:rounded-tl-[50em] ztablet:rounded-bl-[0px]" src="./assets/hero_1.png"></img>
+                    <div class="h-[calc(36vw/2)] ztablet:h-[calc(16vw/2)] max-h-[6em]">
+                        <img class="absolute right-0 left-0 m-auto bottom-0 object-cover rounded-bl-[6em] w-[100vw] max-w-2xl ztablet:w-[50vw]" src="./assets/hero_box.png"></img>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -61,6 +61,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png" />
 
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
     <!-- Styles -->
     <link rel="stylesheet" href="/style/fontstyles.css" />
     <link rel="stylesheet" href="/style/tailwind.css" />
@@ -89,9 +92,10 @@
                 
 <!-- <nav>Veranda</nav> -->
 <section id="hero" class="w-full"><div class="bg-slate">
-    <div class="min-h-[calc(100vh-1em)] rounded-bl-[8em] bg-primary">
-        <div class="bg-herobgg">
-            <nav class="z-10 flex justify-between p-4 pb-12 ztablet:py-8 ztablet:px-12 zdesktop:pb-16">
+    <div class="bg-primary  ztablet:rounded-bl-[8em]">
+        <div class="relative">
+            <div class="hero-bg relative bg-herobgg "></div>
+            <nav class="z-10 m-auto flex max-w-7xl justify-between p-4 pb-6 ztablet:py-8 ztablet:px-12 zdesktop:pb-16">
     <div><img class="w-28 min-w-[6em] zmobile:w-36 zdesktop:w-52" src="./assets/logo.svg" alt="Veranda Logo" /></div>
     <button
         onclick="window.location.href='#updates';"
@@ -101,14 +105,27 @@
     </button>
 </nav>
 
-            <div class="grid-cols-2">
-                <div>
-                    <h1 class="font-sansl text-xxlg">Deliver Better</h1>
-                    <p class="font-sansl text-huge"></p>>We make food deliveries more convenient, secure, and manageable.
+
+            <!-- Columns -->
+            <div class="max-w-[120em] m-auto between relative flex flex-col-reverse justify-center pb-4 ztablet:flex-row">
+
+                <!-- Text -->
+                <div style="flex: 1 0 50%;" class="m-auto w-[86vw] max-w-7xl text-center text-white">
+                    <h1 class="font-sansl text-xlg tracking-tight ztablet:text-xxlg">Deliver Better</h1>
+                    <p class="pb-6 text-med leading-6">We make food deliveries more convenient, secure, and manageable.
 </p>
-                    <p class="font-sansl text-huge"></p>>Learn More</p>
+                    <div class=" text-brightgreen ">
+                        <p class="font-sanm text-sm leading-[0.8em]">Learn More</p><span class="material-icons">expand_more</span>
+                    </div>
                 </div>
-                <div></div>
+
+                <!-- Pictures -->
+                <div style="flex: 1 0 50%;" class="relative t-0 l-0">
+                    <img class="object-cover rounded-bl-[6em] h-[18em] zmobile:h-[23em] ztablet:h-[50em] ztablet:rounded-tl-[50em] ztablet:rounded-bl-[0px]" src="./assets/hero_1.png"></img>
+                    <div class="h-[calc(36vw/2)] ztablet:h-[calc(16vw/2)] max-h-[6em]">
+                        <img class="absolute right-0 left-0 m-auto bottom-0 object-cover rounded-bl-[6em] w-[100vw] max-w-2xl ztablet:w-[50vw]" src="./assets/hero_box.png"></img>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
