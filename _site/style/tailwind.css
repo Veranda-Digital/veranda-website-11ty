@@ -585,8 +585,24 @@ video {
   }
 }
 
+.relative {
+  position: relative;
+}
+
+.top-\[3px\] {
+  top: 3px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .m-auto {
   margin: auto;
+}
+
+.flex {
+  display: flex;
 }
 
 .table {
@@ -613,20 +629,40 @@ video {
   min-height: 100vh;
 }
 
+.min-h-\[calc\(100vh-1em\)\] {
+  min-height: calc(100vh - 1em);
+}
+
 .w-full {
   width: 100%;
 }
 
-.w-\[85vw\] {
-  width: 85vw;
+.w-28 {
+  width: 7rem;
 }
 
 .w-\[86vw\] {
   width: 86vw;
 }
 
+.min-w-\[6em\] {
+  min-width: 6em;
+}
+
 .max-w-7xl {
   max-width: 80rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.rounded-4xl {
+  border-radius: 2rem;
 }
 
 .rounded-\[2em\] {
@@ -659,6 +695,11 @@ video {
   background-color: rgb(28 81 65 / var(--tw-bg-opacity));
 }
 
+.bg-brightgreen {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 209 107 / var(--tw-bg-opacity));
+}
+
 .bg-cream {
   --tw-bg-opacity: 1;
   background-color: rgb(247 246 241 / var(--tw-bg-opacity));
@@ -672,16 +713,34 @@ video {
   background-image: url('../assets/enviro.png');
 }
 
+.bg-herobg {
+  background-image: url('../assets/hero_bg.png');
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .p-6 {
   padding: 1.5rem;
 }
 
-.p-4 {
-  padding: 1rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .pt-12 {
@@ -744,6 +803,20 @@ video {
   font-family: Roboto, sans-serif;
 }
 
+.text-xsm {
+  font-size: 0.75rem;
+}
+
+.text-xxlg {
+  font-size: 3rem;
+  line-height: 60px;
+}
+
+.text-huge {
+  font-size: 8rem;
+  line-height: 75px;
+}
+
 .text-base {
   font-size: 1rem;
 }
@@ -754,10 +827,6 @@ video {
 
 .text-med {
   font-size: 1.25rem;
-}
-
-.text-xsm {
-  font-size: 0.6rem;
 }
 
 .font-bold {
@@ -794,6 +863,10 @@ video {
 }
 
 @media (min-width: 324px) {
+  .zmobile\:w-36 {
+    width: 9rem;
+  }
+
   .zmobile\:text-xlg {
     font-size: 2.2rem;
     line-height: 45px;
@@ -813,6 +886,21 @@ video {
     padding: 7rem;
   }
 
+  .ztablet\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .ztablet\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .ztablet\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .ztablet\:pt-20 {
     padding-top: 5rem;
   }
@@ -823,6 +911,10 @@ video {
 
   .ztablet\:text-center {
     text-align: center;
+  }
+
+  .ztablet\:text-base {
+    font-size: 1rem;
   }
 
   .ztablet\:text-lg {
@@ -848,8 +940,16 @@ video {
 }
 
 @media (min-width: 1025px) {
+  .zdesktop\:w-52 {
+    width: 13rem;
+  }
+
   .zdesktop\:p-40 {
     padding: 10rem;
+  }
+
+  .zdesktop\:pb-16 {
+    padding-bottom: 4rem;
   }
 
   .zdesktop\:text-xxxlg {

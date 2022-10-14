@@ -27,7 +27,7 @@ module.exports = function (eleventyConfig) {
 
         // Files read by Eleventy, add as needed
         markdownTemplateEngine: 'html',
-        templateFormats: ['html', 'md', 'txt', 'liquid', 'jpg', 'gif', 'png', 'webmanifest', 'woff', 'woff2', 'mp4', 'js'],
+        templateFormats: ['html', 'md', 'txt', 'liquid', 'jpg', 'gif', 'png', 'webmanifest', 'woff', 'woff2', 'mp4', 'js', 'svg'],
         passthroughFileCopy: true
     };
 };

@@ -1,11 +1,14 @@
 <div class="bg-slate">
-    <div class="min-h-screen rounded-bl-[8em] bg-primary">
-        <div>
-            <nav><img alt="Veranda Logo" /><button>{{site.signUpBtn}}</button></nav>
-            <div>
-                <h1>{{site.topHeader}}</h1>
-                <p>{% render "./section_content/hero.md" %}</p>
-                <p>Learn More</p>
+    <div class="min-h-[calc(100vh-1em)] rounded-bl-[8em] bg-primary">
+        <div class="bg-herobgg">
+            {% include "../partials/nav.html" %}
+            <div class="grid-cols-2">
+                <div>
+                    <h1 class="font-sansl text-xxlg">{{site.topHeader}}</h1>
+                    <p class="font-sansl text-huge"></p>>{% render "./section_content/hero.md" %}</p>
+                    <p class="font-sansl text-huge"></p>>Learn More</p>
+                </div>
+                <div></div>
             </div>
         </div>
     </div>

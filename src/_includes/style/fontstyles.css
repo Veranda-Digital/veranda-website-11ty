@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: 'test_national_2light';
-    src: url('testnational2-light-webfont.woff2') format('woff2'), url('testnational2-light-webfont.woff') format('woff');
+    src: url('../assets/fonts/testnational2-light-webfont.woff2') format('woff2'), url('../assets/fonts/testnational2-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -26,7 +26,7 @@
 
 @font-face {
     font-family: 'test_national_2medium';
-    src: url('testnational2-medium-webfont.woff2') format('woff2'), url('testnational2-medium-webfont.woff') format('woff');
+    src: url('../assets/fonts/testnational2-medium-webfont.woff2') format('woff2'), url('../assets/fonts/testnational2-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

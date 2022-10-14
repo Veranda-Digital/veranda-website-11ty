@@ -18,7 +18,8 @@ module.exports = {
             primary: '#1c5141',
             slate: '#23252c',
             cream: '#f7f6f1',
-            salmon: '#ff9393'
+            salmon: '#ff9393',
+            brightgreen: '#33d16b'
         },
         fontFamily: {
             sans: ['test_national_2regular', 'sans-serif'],
@@ -29,7 +30,7 @@ module.exports = {
             serif: ['Merriweather', 'serif']
         },
         fontSize: {
-            xsm: '0.6rem',
+            xsm: '0.75rem',
             sm: '0.8rem',
             base: '1rem',
             med: '1.25rem',
@@ -37,10 +38,12 @@ module.exports = {
             lgr: '2rem',
             xlg: ['2.2rem', '45px'],
             xxlg: ['3rem', '60px'],
-            xxxlg: ['4rem', '75px']
+            xxxlg: ['4rem', '75px'],
+            huge: ['8rem', '75px']
         },
         extend: {
             backgroundImage: {
+                herobg: "url('../assets/hero_bg.png')",
                 midbanner: "url('../assets/mid-banner.png')",
                 enviro: "url('../assets/enviro.png')"
             },

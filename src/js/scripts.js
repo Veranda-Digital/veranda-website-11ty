@@ -1,8 +1,7 @@
 var playButton = document.getElementById('play_button');
+var video = document.getElementById('commercial');
 
-playbutton.style.color = 'blue';
-
-playbutton.addEventListener('click', function () {
+playButton.addEventListener('click', function () {
     if (video.paused == true) {
         // Play the video
         video.play();
@@ -17,3 +16,5 @@ playbutton.addEventListener('click', function () {
         playButton.innerHTML = 'Play';
     }
 });
+
+var playbutton = document.getElementById('play_button');
