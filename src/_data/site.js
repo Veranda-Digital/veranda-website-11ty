@@ -12,5 +12,10 @@ module.exports = {
     signUpBtn: 'Sign Up For Updates',
 
     solutionHeader: 'The Veranda Solution To',
-    solutionSubHeader: 'The Most Inconvenient Convenience'
+    solutionSubHeader: 'The Most Inconvenient Convenience',
+
+    systemHeader: 'The Veranda System Is',
+    systemSubHeader: 'A Seamless Delivery Experience',
+    systemColHead1: 'Delivery Box',
+    systemColHead2: 'Delivery Dashboard'
 };

@@ -37,9 +37,10 @@ module.exports = {
             lg: '1.50rem',
             lgr: '2rem',
             xlg: ['2.2rem', '45px'],
-            xxlg: ['3rem', '60px'],
+            xxlg: ['2.8rem', '60px'],
             xxxlg: ['4rem', '75px'],
-            huge: ['8rem', '75px']
+            huge: ['9.5rem', '120px'],
+            xhuge: ['12rem', '10rem']
         },
         extend: {
             backgroundImage: {
