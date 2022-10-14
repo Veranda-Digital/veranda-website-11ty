@@ -23,5 +23,5 @@ module.exports = {
     featuresSubHeader: 'Thinking Outside The Box',
     featuresSecHead1: 'Designed With Your Lifestyle in Mind',
     featuresSecHead2: 'Keeping Your Deliveries Safe & Fresh',
-    featuresSecHead3: 'Integrations & Techhnology'
+    featuresSecHead3: 'Integrations & Technology'
 };
