@@ -17,5 +17,11 @@ module.exports = {
     systemHeader: 'The Veranda System Is',
     systemSubHeader: 'A Seamless Delivery Experience',
     systemColHead1: 'Delivery Box',
-    systemColHead2: 'Delivery Dashboard'
+    systemColHead2: 'Delivery Dashboard',
+
+    featuresHeader: 'Veranda Features Include',
+    featuresSubHeader: 'Thinking Outside The Box',
+    featuresSecHead1: 'Designed With Your Lifestyle in Mind',
+    featuresSecHead2: 'Keeping Your Deliveries Safe & Fresh',
+    featuresSecHead3: 'Integrations & Techhnology'
 };
