@@ -713,10 +713,6 @@ video {
   background-image: url('../assets/enviro.png');
 }
 
-.bg-herobg {
-  background-image: url('../assets/hero_bg.png');
-}
-
 .bg-cover {
   background-size: cover;
 }
