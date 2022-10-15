@@ -26,7 +26,7 @@ module.exports = {
     featuresSecHead3: 'Integrations & Technology',
 
     updatesHeader: 'Current Product Development Status',
-    updatesSubHeader: 'Test, prototyping, and testing some more',
+    updatesSubHeader: 'Testing, prototyping, and testing some more',
     updatesContent: 'Sign up to receive updates on the progress and availability of the Veranda System.',
 
     footerCopy: 'Copyright © 2022 Veranda Digital Inc.',
