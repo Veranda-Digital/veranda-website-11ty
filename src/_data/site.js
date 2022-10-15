@@ -23,5 +23,12 @@ module.exports = {
     featuresSubHeader: 'Thinking Outside The Box',
     featuresSecHead1: 'Designed With Your Lifestyle in Mind',
     featuresSecHead2: 'Keeping Your Deliveries Safe & Fresh',
-    featuresSecHead3: 'Integrations & Technology'
+    featuresSecHead3: 'Integrations & Technology',
+
+    updatesHeader: 'Current Product Development Status',
+    updatesSubHeader: 'Test, prototyping, and testing some more',
+    updatesContent: 'Sign up to receive updates on the progress and availability of the Veranda System.',
+
+    footerCopy: 'Copyright © 2022 Veranda Digital Inc.',
+    footerMail: 'contact@getveranda.com'
 };

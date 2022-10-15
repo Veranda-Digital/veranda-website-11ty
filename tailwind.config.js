@@ -8,7 +8,7 @@ module.exports = {
             ztiny: '200px',
             zmobile: '324px',
             ztablet: '767px',
-            zdesktop: '1025px',
+            zdesktop: '1023px',
             zlgdesktop: '1225px',
             ztv: '2400px'
         },
