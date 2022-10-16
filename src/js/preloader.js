@@ -2,7 +2,6 @@
  * Preloader
  *****************/
 
-preloader = document.getElementById('preloader');
 contentWrapper = document.getElementById('contentWrapper');
 
 // if ($(document).scrollTop() < 250) {
@@ -11,12 +10,19 @@ contentWrapper = document.getElementById('contentWrapper');
 // $('.splash-center-div').css('position', 'fixed');
 
 // if (sessionStorage.getItem('dontLoad') == null){
-preloader.classList.remove('displaynone');
 
-contentWrapper.style.opacity = 1;
-setTimeout(function () {
-    preloader.classList.add('loaded');
-}, 500);
+/* It's setting the opacity of the contentWrapper to 1. */
+// contentWrapper.style.opacity = 1;
+// setTimeout(function () {
+//     preloader.classList.add('loaded');
+// }, 500);
+preloader = document.getElementById('preloader');
+// preloader.classList.remove('displaynone');
+window.addEventListener('load', () => {
+    setTimeout(function () {
+        preloader.classList.add('loaded');
+    }, 100);
+});
 // preloader.delay(400).fadeOut('fast');
 
 // jQuery(".content-wrapper").hide().delay(2000).fadeIn("fast");
