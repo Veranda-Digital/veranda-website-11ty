@@ -48,6 +48,12 @@ Nic Durish - [nic.durish@getveranda.com](mailto:mail@nicdurish.ca)
 
 Distributed under the GNU GPLv3 License. See [`LICENSE`][license-url] for more information.
 
+## Acknowledgements
+
+Whilst the vast majority of the code used for this site was fully customized, there were a few libraries that were also used (referenced within code). These include:
+
+-   [Michal Snik's AOS](https://github.com/michalsnik/aos) for Animations On Scroll.
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 

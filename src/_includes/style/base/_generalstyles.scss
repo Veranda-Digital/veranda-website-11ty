@@ -26,6 +26,24 @@ mark {
     opacity: 0.08;
 }
 
+#herobg,
+#herobox,
+#herobg2,
+#herobox2,
+#herobg3,
+#herobox3 {
+    -webkit-transition: 1s all ease;
+    -o-transition: 1s all ease;
+    transition: 1s all ease;
+}
+
+#herobg2,
+#herobox2,
+#herobg3,
+#herobox3 {
+    opacity: 0;
+}
+
 .system-bg {
     position: absolute;
     height: 100%;
