@@ -1,5 +1,5 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 // var playButton = document.getElementById('play_button');
 // var video = document.getElementById('commercial');
