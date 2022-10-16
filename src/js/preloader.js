@@ -16,7 +16,7 @@ contentWrapper = document.getElementById('contentWrapper');
 /* It's setting the opacity of the contentWrapper to 1. */
 setTimeout(function () {
     preloader.classList.add('loaded');
-}, 800);
+}, 600);
 preloader = document.getElementById('preloader');
 // preloader.classList.remove('displaynone');
 window.addEventListener('load', () => {
