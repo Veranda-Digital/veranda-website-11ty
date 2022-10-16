@@ -4,11 +4,19 @@
 
     <body>
         <div class="viewport">
-            <main class="min-h-screen">
+            <!-- Include Preloader -->
+            <div role="complementary" id="preloader">
+                <div class="spinner_wrap">
+                    <img alt="Site Logo" src="../assets/logo_symbol.svg" class="spinner" />
+                </div>
+            </div>
+
+            <main id="contentWrapper" class="min-h-screen">
                 {{ content }}
                 <footer class="bottom">{% include "sections/footer.html" %}</footer>
             </main>
         </div>
     </body>
     <script src="js/scripts.js"></script>
+    <script src="../js/preloader.js"></script>
 </html>
