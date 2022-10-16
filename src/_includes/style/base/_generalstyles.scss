@@ -143,6 +143,53 @@ input::-moz-placeholder {
     }
 }
 
+.scroll-down-arrow {
+    position: relative;
+    -webkit-animation: bounce 1000ms ease infinite;
+    -moz-animation: bounce 1000ms ease infinite;
+    -o-animation: bounce 1000ms ease infinite;
+    animation: bounce 1000ms ease infinite;
+    -webkit-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+    -moz-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+    -ms-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+    animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+    content: '';
+}
+
+@-webkit-keyframes bounce {
+    0%,
+    100% {
+        top: 9px;
+        opacity: 0.15;
+    }
+
+    25% {
+        top: 12px;
+        opacity: 0.45;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}
+@keyframes bounce {
+    0%,
+    100% {
+        top: 6px;
+        opacity: 1;
+    }
+
+    50% {
+        top: 10px;
+        opacity: 0.2;
+    }
+
+    25% {
+        top: 2px;
+        opacity: 0.6;
+    }
+}
+
 /*************
 SUPER-GENERAL STYLES
 **************/
