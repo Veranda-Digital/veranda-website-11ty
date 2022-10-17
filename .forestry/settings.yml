@@ -5,6 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: README.md
+  label: ding
+  match: "**/*"
+- type: heading
+  label: test
+- type: document
   path: src/_includes/sections/section-content/hero.md
   label: test
 - type: document
