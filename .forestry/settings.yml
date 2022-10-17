@@ -12,7 +12,6 @@ sections:
 - type: document
   path: README.md
   label: ding
-  match: "**/*"
 - type: heading
   label: test
 - type: document
