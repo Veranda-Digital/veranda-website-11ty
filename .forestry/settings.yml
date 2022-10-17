@@ -7,7 +7,6 @@ sections:
 - type: document
   path: src/_data/site.json
   label: Site Title and Headings
-  match: "**/*"
 - type: directory
   path: src/_includes/sections/section_content
   label: Section Content
