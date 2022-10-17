@@ -7,18 +7,17 @@ sections:
 - type: document
   path: src/_data/site.json
   label: Site Title and Headings
+- type: heading
+  label: Sections
 - type: directory
   path: src/_includes/sections/section_content
   label: Section Content
   create: all
   match: "**/*"
-- type: directory
-  path: src/_includes/sections
-  label: dongerino
-  create: all
+- type: document
+  path: src/_includes/sections/section_content/hero.md
+  label: Hero
   match: "**/*"
-- type: heading
-  label: Sections
 upload_dir: src/assets
 public_path: ''
 front_matter_path: ''
