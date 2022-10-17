@@ -4,7 +4,7 @@
 <br />
 <p align="center">
   <a>
-    <img src="src/assets/logo.svg" alt="Logo" width="240" height="80">
+    <img src="src/assets/branding/logo.svg" alt="Logo" width="240" height="80">
   </a>
 
   <h2 align="center"><a href="https://getveranda.com">getVeranda.com</a></h2>

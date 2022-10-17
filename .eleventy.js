@@ -17,7 +17,7 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy({ './_tmp/style.css': './style.css' });
 
-    eleventyConfig.addPassthroughCopy('./node_modules/aos');
+    eleventyConfig.addPassthroughCopy('./node_modules/aos/dist');
 
     // Eleventy configuration
     return {
@@ -29,7 +29,7 @@ module.exports = function (eleventyConfig) {
 
         // Files read by Eleventy, add as needed
         markdownTemplateEngine: 'html',
-        templateFormats: ['html', 'md', 'txt', 'liquid', 'jpg', 'gif', 'png', 'webmanifest', 'woff', 'woff2', 'mp4', 'js', 'svg'],
+        templateFormats: ['html', 'md', 'txt', 'liquid', 'jpg', 'gif', 'png', 'webmanifest', 'woff', 'woff2', 'mp4', 'js', 'svg', 'webp'],
         passthroughFileCopy: true
     };
 };

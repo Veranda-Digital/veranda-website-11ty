@@ -45,9 +45,9 @@ module.exports = {
         },
         extend: {
             backgroundImage: {
-                herobg: "url('../assets/hero_bg.png')",
-                midbanner: "url('../assets/mid-banner.png')",
-                enviro: "url('../assets/enviro.png')"
+                herobg: "url('../assets/bg/hero_bg.webp')",
+                // midbanner: "url('../assets/bg/midbanner_bg.webp')",
+                enviro: "url('../assets/bg/enviro_bg.webp')"
             },
             spacing: {
                 128: '32rem',
