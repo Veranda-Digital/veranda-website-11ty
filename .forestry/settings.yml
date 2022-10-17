@@ -4,14 +4,13 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: src/_data/site.json
+  label: Site Title and Headings
+  match: "**/*"
 - type: directory
   path: src/_includes/sections/section_content
   label: Section Content
-  create: all
-  match: "**/*"
-- type: directory
-  path: src/_includes/sections
-  label: twetwetwrt
   create: all
   match: "**/*"
 - type: directory
@@ -20,7 +19,7 @@ sections:
   create: all
   match: "**/*"
 - type: heading
-  label: test
+  label: Sections
 upload_dir: src/assets
 public_path: ''
 front_matter_path: ''
