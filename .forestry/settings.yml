@@ -5,6 +5,18 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: src/_includes/sections/section_content/system2.md
+  label: System (Box2)
+  match: "**/*"
+- type: document
+  path: src/_includes/sections/section_content/system1.md
+  label: System (Box1)
+  match: "**/*"
+- type: document
+  path: src/_includes/sections/section_content/solution.md
+  label: Solution
+  match: "**/*"
+- type: document
   path: src/_data/site.json
   label: Site Title and Headings
 - type: heading
