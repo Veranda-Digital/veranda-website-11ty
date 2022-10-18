@@ -1,1 +1,1 @@
-Your perishables protected from spoiling and theft in this climate controlled Deliver Box. This means an end to food spoilage, receiving deliveries in the state they should be in, regardless of the weather.
+Deliveries finally have a home in the Veranda Box. Fitted with a smart lock to keep your packages safe from theft, sensors to keep you in the know, and thermal insulation to keep perishables protected from spoiling.

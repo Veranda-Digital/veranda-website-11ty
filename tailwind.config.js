@@ -10,6 +10,7 @@ module.exports = {
             ztablet: '767px',
             zdesktop: '1023px',
             zlgdesktop: '1225px',
+            zuwdesktop: '1900px',
             ztv: '2400px'
         },
         colors: {
@@ -31,7 +32,7 @@ module.exports = {
             serif: ['Merriweather', 'serif']
         },
         fontSize: {
-            xsm: '0.75rem',
+            xsm: '0.7rem',
             sm: '0.8rem',
             base: '1rem',
             med: '1.25rem',

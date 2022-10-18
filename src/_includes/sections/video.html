@@ -1,5 +1,6 @@
-<div class="m-auto h-[calc(100vw/4)] max-h-[24em] bg-slate text-center ztablet:h-[calc(80vw/4)]">
+<div class="m-auto h-[calc(80vw/4)] max-h-[24em] bg-slate text-center">
     <iframe
+        id="vimeovid1"
         class="m-auto rounded-2xl"
         title="Veranda Promotional Video"
         class="m-auto rounded-[2em]"
@@ -8,8 +9,16 @@
         width="71%"
         frameborder="0"
         allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen
     ></iframe>
+    <!-- <br /> -->
+    <!-- <button onclick="play_video()">MY_PLAY_BUTTON</button> -->
+    <!-- <script>
+        function play_video() {
+            var player = document.getElementById('vimeovid1');
+            var data = { method: 'play' };
+            player.contentWindow.postMessage(JSON.stringify(data), '*');
+        }
+    </script> -->
     <script src="https://player.vimeo.com/api/player.js"></script>
 
     <!-- <video id="commercial" controls class="h-[200%] rounded-xl" poster="assets/commercial_thumb.webp">

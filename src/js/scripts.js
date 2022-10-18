@@ -1,37 +1,30 @@
-// var playButton = document.getElementById('play_button');
-// var video = document.getElementById('commercial');
+// Remove updates button when enviro section is in view (or past)
 
-// playButton.addEventListener('click', function () {
-//     if (video.paused == true) {
-//         // Play the video
-//         video.play();
+var handlerFired;
+window.addEventListener('scroll', function (e) {
+    var containerEnv = document.querySelector('#updates');
+    var updateBtn = document.querySelector('#fixedbtn');
 
-//         // Update the button text to 'Pause'
-//         playButton.innerHTML = 'Pause';
-//     } else {
-//         // Pause the video
-//         video.pause();
+    if (!isElementInOrPastViewport(containerEnv)) {
+        updateBtn.style.display = 'none';
+    } else {
+        updateBtn.style.display = 'block';
+    }
+});
+function isElementInOrPastViewport(el) {
+    // Special bonus for those using jQuery
+    if (typeof jQuery === 'function' && el instanceof jQuery) {
+        el = el[0];
+    }
 
-//         // Update the button text to 'Play'
-//         playButton.innerHTML = 'Play';
-//     }
-// });
+    var rect = el.getBoundingClientRect();
+    return rect.top >= (window.innerHeight || document.documentElement.clientHeight);
+}
+
+// Change Hero Background and Box images
 
 herobg = document.getElementById('herobg');
 herobox = document.getElementById('herobox');
-
-async function infiniteLoop() {
-    // setTimeout(function () {
-    //     herobg.src = './assets/hero_2.png';
-    //     herobox.src = './assets/hero_2box.png';
-    // }, 3000);
-    // setTimeout(function () {
-    //     herobg.src = './assets/hero_3.png';
-    //     herobox.src = './assets/hero_3box.png';
-    // }, 6000);
-}
-
-infiniteLoop();
 
 function start() {
     var herobg = document.getElementById('herobg');
@@ -68,28 +61,6 @@ function start() {
     };
 
     setInterval(changeImage, delayInSeconds * 1000);
-
-    // var imageDir = './assets/';
-
-    // var bgimages = ['hero_1.png', 'hero_2.png', 'hero_3.png'];
-    // var boximages = ['hero_1box.png', 'hero_2box.png', 'hero_3box.png'];
-
-    // var changeImage = function () {
-    //     herobg.style.opacity = 0.3;
-    //     herobox.style.opacity = 0.6;
-
-    //     setTimeout(function () {
-    //         var len = bgimages.length;
-    //         herobg.src = imageDir + bgimages[num];
-    //         herobox.src = imageDir + boximages[num++];
-    //         if (num == len) {
-    //             num = 0;
-    //         }
-    //         herobg.style.opacity = 1;
-    //         herobox.style.opacity = 1;
-    //     }, 400);
-    // };
-    // setInterval(changeImage, delayInSeconds * 1000);
 }
 window.onload = function () {
     start();

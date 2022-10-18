@@ -1,1 +1,1 @@
-Gain visibility into when deliveries are expected. Deliveries are secured and controlled by the app, with access proivded via Bluetooth, manually or automatically on schedule.
+Stay in control of your deliveries with the Veranda Dashboard. Check the status of your orders, control your Veranda Box, set locking schedules or share access with others. Simply connect all your online merchants and let Veranda handle the rest.
