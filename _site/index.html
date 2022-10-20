@@ -138,18 +138,22 @@
             <div class="hero-bg relative"></div>
             <nav class="z-10 m-auto flex max-w-[120em] justify-between p-4 pb-6 ztablet:py-8 ztablet:px-12 zdesktop:pb-16">
     <div><img class="w-28 min-w-[6em] zmobile:w-36 zdesktop:w-52" src="./assets/branding/logo.svg" alt="Veranda Logo" /></div>
+    <!-- Button which scrolls to bottom -->
     <!-- <button
-        onclick="window.location.href='#updates';"
-        class="color-slate relative top-[3px] z-10 rounded-4xl bg-brightgreen px-4 py-1 text-xsm font-bold tracking-tight ztablet:px-8 ztablet:py-2 ztablet:text-base"
-    > -->
-    <button
         id="fixedbtn"
         onclick="window.location.href='#updates';"
         class="fixed right-4 top-4 z-10 rounded-4xl bg-brightgreen px-4 py-2 text-xsm font-bold tracking-tight text-slate ztablet:top-6 ztablet:right-12 ztablet:px-8 ztablet:py-4 ztablet:text-base zdesktop:top-8 zuwdesktop:right-[calc(50vw-57em)]"
+    > -->
+
+    <!-- Button which opens modal -->
+    <a
+        id="fixedbtn"
+        data-formkit-toggle="081cac7ca4"
+        href='https://relentless-builder-3913.ck.page/081cac7ca4';"
+        class="fixed right-4 top-4 z-10 rounded-4xl bg-brightgreen px-4 py-2 text-xsm font-bold tracking-tight text-slate ztablet:top-6 ztablet:right-12 ztablet:px-8 ztablet:py-4 ztablet:text-base zdesktop:top-8 zuwdesktop:right-[calc(50vw-57em)]"
     >
         Sign Up For Updates
-        <a data-formkit-toggle="081cac7ca4" href="https://relentless-builder-3913.ck.page/081cac7ca4">Your link text</a>
-    </button>
+    </a>
 </nav>
 
 
@@ -401,7 +405,8 @@ Introducing <b>Veranda</b>, the world’s most sensible delivery system.
                     <h3 class="pb-8 font-sansmd text-lg font-bold leading-[1.2] tracking-tight ztablet:text-lgr">Testing, prototyping, and testing some more</h3>
                 </div>
                 <div class="pb-10 text-med ztablet:text-lgr"><p>Sign up to receive updates on the progress and availability of the Veranda System.</p></div>
-                <div class="text-center"><form class="" action="https://getform.io/f/a89976b0-eaf0-43a1-8223-6d626a50172e" method="POST">
+                <div class="text-center"><!-- GetForm Integration -->
+<!-- <form class="" action="https://getform.io/f/a89976b0-eaf0-43a1-8223-6d626a50172e" method="POST">
     <input
         type="email"
         name="email"
@@ -415,7 +420,19 @@ Introducing <b>Veranda</b>, the world’s most sensible delivery system.
     >
         Sign Up For Updates
     </button>
-</form>
+</form> -->
+
+<!-- ConvertKit Integration -->
+<div>
+    <a
+        data-formkit-toggle="081cac7ca4"
+        href='https://relentless-builder-3913.ck.page/081cac7ca4';"
+        type="submit"
+        class="color-slate relative top-[3px] z-10 rounded-4xl bg-brightgreen px-6 py-3 text-sm font-bold tracking-tight ztablet:px-8 ztablet:py-4 ztablet:text-base"
+    >
+        Sign Up For Updates
+    </a>
+</div>
 </div>
             </div>
             <div style="flex: 1 0 50%" class=" hidden text-lgr text-black zdesktop:block">                    

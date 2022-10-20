@@ -1,15 +1,19 @@
 <nav class="z-10 m-auto flex max-w-[120em] justify-between p-4 pb-6 ztablet:py-8 ztablet:px-12 zdesktop:pb-16">
     <div><img class="w-28 min-w-[6em] zmobile:w-36 zdesktop:w-52" src="./assets/branding/logo.svg" alt="Veranda Logo" /></div>
+    <!-- Button which scrolls to bottom -->
     <!-- <button
-        onclick="window.location.href='#updates';"
-        class="color-slate relative top-[3px] z-10 rounded-4xl bg-brightgreen px-4 py-1 text-xsm font-bold tracking-tight ztablet:px-8 ztablet:py-2 ztablet:text-base"
-    > -->
-    <button
         id="fixedbtn"
         onclick="window.location.href='#updates';"
         class="fixed right-4 top-4 z-10 rounded-4xl bg-brightgreen px-4 py-2 text-xsm font-bold tracking-tight text-slate ztablet:top-6 ztablet:right-12 ztablet:px-8 ztablet:py-4 ztablet:text-base zdesktop:top-8 zuwdesktop:right-[calc(50vw-57em)]"
+    > -->
+
+    <!-- Button which opens modal -->
+    <a
+        id="fixedbtn"
+        data-formkit-toggle="081cac7ca4"
+        href='https://relentless-builder-3913.ck.page/081cac7ca4';"
+        class="fixed right-4 top-4 z-10 rounded-4xl bg-brightgreen px-4 py-2 text-xsm font-bold tracking-tight text-slate ztablet:top-6 ztablet:right-12 ztablet:px-8 ztablet:py-4 ztablet:text-base zdesktop:top-8 zuwdesktop:right-[calc(50vw-57em)]"
     >
         {{site.signUpBtn}}
-        <a data-formkit-toggle="081cac7ca4" href="https://relentless-builder-3913.ck.page/081cac7ca4">Your link text</a>
-    </button>
+    </a>
 </nav>
