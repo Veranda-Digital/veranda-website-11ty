@@ -12,7 +12,7 @@
         "watch:eleventy": "npx @11ty/eleventy --serve",
         "build:eleventy": "npx @11ty/eleventy",
         "start": "npm-run-all build:sass  --parallel watch:* watch:tailwind",
-        "build": "npm-run-all build:*"
+        "build": "npm-run-all build:sass build:tailwind build:eleventy"
     },
     "keywords": [],
     "author": "Nic Durish",
