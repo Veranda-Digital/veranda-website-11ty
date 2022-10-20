@@ -1,4 +1,5 @@
 ![Project State][stable-shield]
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0a112e0d-f0c9-4182-bb6a-a1b210011d54/deploy-status)](https://app.netlify.com/sites/getveranda/deploys)
 
 <!-- PROJECT LOGO -->
 <br />
