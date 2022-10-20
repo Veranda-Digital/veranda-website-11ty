@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "A starter template to build websites with Ghost & Eleventy TESTTESTTEST",
     "main": "index.js",
-    "url": "localhost:8080",
+    "url": "/",
     "scripts": {
         "watch:sass": "sass --watch src/_includes/style:_site/style --style compressed",
         "build:sass": "sass src/_includes/style:_site/style --style compressed",
