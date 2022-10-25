@@ -49,9 +49,12 @@ mark {
     background-repeat: no-repeat;
     opacity: 0.7;
 }
-a:hover {
-    // -webkit-filter: opacity(80%);
-    color: #ff9393;
+a {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 button:hover {
