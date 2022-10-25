@@ -25,7 +25,7 @@ module.exports = {
         },
         fontFamily: {
             sans: ['test_national_2regular', 'sans-serif'],
-            sansmd: ['test_national_2bold', 'sans-erif'],
+            sansmd: ['test_national_2bold', 'sans-serif'],
             sansb: ['test_national_2bold', 'sans-serif'],
             sansl: ['test_national_2light', 'test_national_2regular', 'sans-serif'],
             basic: ['Roboto', 'sans-serif'],
