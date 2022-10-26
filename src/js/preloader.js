@@ -3,13 +3,14 @@
  *****************/
 
 contentWrapper = document.getElementById('contentWrapper');
+preloader = document.getElementById('preloader');
 
 setTimeout(function () {
     preloader.classList.add('loaded');
-}, 600);
-preloader = document.getElementById('preloader');
+}, 800);
+
 window.addEventListener('load', () => {
     setTimeout(function () {
         preloader.classList.add('loaded');
-    }, 100);
+    }, 400);
 });

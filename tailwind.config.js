@@ -24,10 +24,10 @@ module.exports = {
             brightgreen: '#33d16b'
         },
         fontFamily: {
-            sans: ['test_national_2regular', 'sans-serif'],
-            sansmd: ['test_national_2bold', 'sans-serif'],
-            sansb: ['test_national_2bold', 'sans-serif'],
-            sansl: ['test_national_2light', 'test_national_2regular', 'sans-serif'],
+            sans: ['national_2regular', 'sans-serif'],
+            sansmd: ['national_2bold', 'sans-serif'],
+            sansb: ['national_2bold', 'sans-serif'],
+            sansl: ['national_2light', 'national_2regular', 'sans-serif'],
             basic: ['Roboto', 'sans-serif'],
             serif: ['Merriweather', 'serif']
         },

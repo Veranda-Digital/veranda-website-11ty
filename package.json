@@ -1,7 +1,7 @@
 {
     "name": "veranda-website-11ty",
     "version": "1.0.0",
-    "description": "A starter template to build websites with Ghost & Eleventy TESTTESTTEST",
+    "description": "Veranda Website built with Eleventy",
     "main": "index.js",
     "url": "/",
     "scripts": {

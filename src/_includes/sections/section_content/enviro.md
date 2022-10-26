@@ -1,1 +1,1 @@
-No more delivery windows means more efficient delivery routes, significantly reducing the overall carbon footprint of your grocers.
+Unattended deliveries, day or night, mean more efficient routes and fewer vehicles on the road, significantly reducing the overall carbon footprint of your groceries.

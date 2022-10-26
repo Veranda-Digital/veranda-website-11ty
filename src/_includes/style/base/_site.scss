@@ -67,27 +67,27 @@ button:hover {
 }
 
 form input {
-    font-family: 'test_national_2regular', 'sans-serif';
+    font-family: 'national_2regular', 'sans-serif';
 }
 
 input::placeholder {
-    font-family: 'test_national_2regular', 'sans-serif';
+    font-family: 'national_2regular', 'sans-serif';
 }
 
 input::-webkit-input-placeholder {
-    font-family: 'test_national_2regular', 'sans-serif';
+    font-family: 'national_2regular', 'sans-serif';
 }
 
 input:-ms-input-placeholder {
-    font-family: 'test_national_2regular', 'sans-serif';
+    font-family: 'national_2regular', 'sans-serif';
 }
 
 input:-moz-placeholder {
-    font-family: 'test_national_2regular', 'sans-serif';
+    font-family: 'national_2regular', 'sans-serif';
 }
 
 input::-moz-placeholder {
-    font-family: 'test_national_2regular', 'sans-serif';
+    font-family: 'national_2regular', 'sans-serif';
 }
 
 #preloader {
@@ -149,6 +149,10 @@ input::-moz-placeholder {
         max-width: 200px;
         height: max(80px, 8vw);
         max-height: 200px;
+    }
+
+    .spinnergif {
+        max-width: 40em;
     }
 }
 
