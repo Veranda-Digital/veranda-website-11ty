@@ -1,1 +1,1 @@
-Deliveries finally have a home in the Veranda Box. Fitted with a smart lock to keep your packages safe from theft, sensors to keep you in the know, and thermal insulation to keep perishables protected from spoiling.
+Deliveries finally have a home in your Veranda. The box is fitted with a smart lock to keep your packages safe from theft, sensors to keep you in the know, and thermal insulation to keep perishables protected from spoiling.
