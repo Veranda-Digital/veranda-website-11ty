@@ -21,6 +21,44 @@ function isElementInOrPastViewport(el) {
     return rect.top >= (window.innerHeight || document.documentElement.clientHeight);
 }
 
+// Mobile Menu Toggle
+document.getElementById('menuToggle').addEventListener('click', function () {
+    const menu = document.getElementById('mobileMenu');
+    const hamburger = document.getElementById('hamburger');
+
+    // Toggle the menu visibility
+    menu.classList.toggle('hidden');
+
+    // Animate the hamburger into an X
+    if (!menu.classList.contains('hidden')) {
+        hamburger.children[0].style.transform = 'rotate(45deg) translateY(7px)';
+        hamburger.children[1].style.opacity = '0';
+        hamburger.children[2].style.transform = 'rotate(-45deg) translateY(-7px)';
+    } else {
+        hamburger.children[0].style.transform = '';
+        hamburger.children[1].style.opacity = '';
+        hamburger.children[2].style.transform = '';
+    }
+});
+
+// Make active page white in nav menu
+document.addEventListener('DOMContentLoaded', function () {
+    var currentPath = window.location.pathname;
+    var navLinks = document.querySelectorAll('nav a');
+
+    console.log('Current Path:', window.location.pathname);
+
+    navLinks.forEach(function (link) {
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active-link');
+        }
+        // else if current path .html
+        if (link.getAttribute('href') === currentPath.slice(-1, 0)) {
+            link.classList.add('active-link');
+        }
+    });
+});
+
 // Change Hero Background and Box images
 
 herobg = document.getElementById('herobg');

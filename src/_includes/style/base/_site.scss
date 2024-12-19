@@ -164,6 +164,10 @@ input::-moz-placeholder {
     }
 }
 
+.active-link {
+    color: white;
+}
+
 .scroll-down-arrow {
     position: relative;
     -webkit-animation: bounce 1000ms ease infinite;
