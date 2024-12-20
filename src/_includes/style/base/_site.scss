@@ -218,6 +218,9 @@ input::-moz-placeholder {
 .formkit-close {
     right: 0 !important;
     z-index: 100;
+    svg {
+        margin: auto;
+    }
 }
 
 .formkit-overlay {
