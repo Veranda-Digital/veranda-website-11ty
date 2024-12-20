@@ -1,8 +1,8 @@
 <head>
     <meta charset="UTF-8" />
 
-    <title>{{ site.title}}</title>
-    <meta name="description" content="{% block description %}{{ site.description }}{% endblock %}" />
+    <title>{{ title || site.title }}</title>
+    <meta name="description" content="{{ description || site.description }}" />
     <meta name="robots" content="index,follow" />
     <meta name="copyright" content="Nic Durish 2022" />
     <meta name="generator" content="Eleventy" />
@@ -17,25 +17,25 @@
     <meta name="twitter:site" content="{{ site.twitter }}" />
     <meta name="twitter:creator" content="{{ site.twitter }}" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="{{ site.url}}" />
-    <meta name="twitter:description" content="{{ site.description }}" />
-    <meta name="twitter:image" content="{{ site.cover_image }}" />
+    <meta name="twitter:url" content="{{ url || site.url }}" />
+    <meta name="twitter:description" content="{{ description || site.description }}" />
+    <meta name="twitter:image" content="{{ image || site.cover_image }}" />
 
     <!--Schema-->
-    <link rel="author" href="{{ site.url }}" />
+    <link rel="author" href="{{ author || site.author }}" />
     <link rel="publisher" href="{{ site.url }}" />
-    <meta itemprop="description" content="{{ site.description }}" />
-    <meta itemprop="image" content="{{ site.cover_image }}" />
+    <meta itemprop="description" content="{{ description || site.description }}" />
+    <meta itemprop="image" content="{{ image || site.cover_image }}" />
 
     <!-- Facebook OpenGraph -->
-    <meta property="og:url" content="{{site.url}}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://getveranda.com/public/site_thumb.jpeg" />
-    <meta property="og:image:url" content="https://getveranda.com/public/site_thumb.jpeg" />
-    <meta property="og:description" content="{{ site.description }}" />
+    <meta property="og:url" content="{{ url || site.url }}" />
+    <meta property="og:type" content="{{ type || 'article' }}" />
+    <meta property="og:image" content="{{ image || 'https://getveranda.com/public/site_thumb.jpeg' }}" />
+    <meta property="og:image:url" content="{{ image || 'https://getveranda.com/public/site_thumb.jpeg' }}" />
+    <meta property="og:description" content="{{ description || site.description }}" />
     <meta property="og:site_name" content="{{ site.title }}" />
     <meta property="og:locale" content="{{ site.lang }}" />
-    <meta property="article:author" content="{{ site.url }}" />
+    <meta property="article:author" content="{{ author || site.url }}" />
 
     <!-- {% include "../partials/analytics.html" %} -->
 
