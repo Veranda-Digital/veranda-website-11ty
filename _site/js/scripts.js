@@ -115,18 +115,18 @@ if (window.location.pathname === '/' || window.location.pathname === '/index.htm
 
     // Remove updates button when enviro section is in view (or past)
     var handlerFired;
-    window.addEventListener('scroll', function (e) {
-        var containerEnv = document.querySelector('#updates');
-        var updateBtn = document.querySelector('#fixedbtn');
+    // window.addEventListener('scroll', function (e) {
+    //     var containerEnv = document.querySelector('#updates');
+    //     var updateBtn = document.querySelector('#fixedbtn');
 
-        if (!isElementInOrPastViewport(containerEnv)) {
-            updateBtn.style.display = 'none';
-        } else {
-            updateBtn.style.display = 'block';
-        }
-    });
+    //     if (!isElementInOrPastViewport(containerEnv)) {
+    //         updateBtn.style.display = 'none';
+    //     } else {
+    //         updateBtn.style.display = 'block';
+    //     }
+    // });
+
+    window.onload = function () {
+        start();
+    };
 }
-
-window.onload = function () {
-    start();
-};
