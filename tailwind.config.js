@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     mode: 'jit',
-    content: ['./_site/**/*.{html,js, sass}'],
+    content: [
+        './src/**/*.{html,js,jsx,ts,tsx}', // Include source files
+        './public/**/*.html' // Include public HTML files
+    ],
+    safelist: ['text-xxxxlg', '80vw'],
     plugins: [],
     theme: {
         screens: {
