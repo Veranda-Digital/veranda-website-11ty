@@ -12,7 +12,7 @@ if (!performance.getEntriesByType('navigation')[0].type.includes('back_forward')
     window.addEventListener('load', () => {
         setTimeout(function () {
             preloader.classList.add('loaded');
-        }, 300);
+        }, 400);
     });
 } else {
     // Skip the preloader for internal navigation
