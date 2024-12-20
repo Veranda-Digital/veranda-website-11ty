@@ -1,16 +1,3 @@
-// Remove updates button when enviro section is in view (or past)
-
-var handlerFired;
-window.addEventListener('scroll', function (e) {
-    var containerEnv = document.querySelector('#updates');
-    var updateBtn = document.querySelector('#fixedbtn');
-
-    if (!isElementInOrPastViewport(containerEnv)) {
-        updateBtn.style.display = 'none';
-    } else {
-        updateBtn.style.display = 'block';
-    }
-});
 function isElementInOrPastViewport(el) {
     // Special bonus for those using jQuery
     if (typeof jQuery === 'function' && el instanceof jQuery) {
@@ -64,10 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var currentPath = window.location.pathname;
     var navLinks = document.querySelectorAll('nav a');
 
-    console.log('Current Path:', window.location.pathname);
-
     navLinks.forEach(function (link) {
-        console.log('NavLinks:', link.getAttribute('href'));
         if (link.getAttribute('href') === currentPath) {
             link.classList.add('active-link');
         }
@@ -78,54 +62,71 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Change Hero Background and Box images
+//Scripts ONLY for the homepage
+if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+    // Change Hero Background and Box images
 
-herobg = document.getElementById('herobg');
-herobox = document.getElementById('herobox');
+    herobg = document.getElementById('herobg');
+    herobox = document.getElementById('herobox');
 
-function start() {
-    var herobg = document.getElementById('herobg');
-    var herobox = document.getElementById('herobox');
-    var herobg2 = document.getElementById('herobg2');
-    var herobox2 = document.getElementById('herobox2');
-    var herobg3 = document.getElementById('herobg3');
-    var herobox3 = document.getElementById('herobox3');
-    var herobg4 = document.getElementById('herobg4');
-    var herobox4 = document.getElementById('herobox4');
-    var delayInSeconds = 4;
-    var num = 1;
+    function start() {
+        var herobg = document.getElementById('herobg');
+        var herobox = document.getElementById('herobox');
+        var herobg2 = document.getElementById('herobg2');
+        var herobox2 = document.getElementById('herobox2');
+        var herobg3 = document.getElementById('herobg3');
+        var herobox3 = document.getElementById('herobox3');
+        var herobg4 = document.getElementById('herobg4');
+        var herobox4 = document.getElementById('herobox4');
+        var delayInSeconds = 4;
+        var num = 1;
 
-    var len = 5;
-    var changeImage = function () {
-        if (num == 1) {
-            herobg.style.opacity = 0;
-            herobox.style.opacity = 0;
-            herobg2.style.opacity = 1;
-            herobox2.style.opacity = 1;
-        } else if (num == 2) {
-            herobg2.style.opacity = 0;
-            herobox2.style.opacity = 0;
-            herobg3.style.opacity = 1;
-            herobox3.style.opacity = 1;
-        } else if (num == 3) {
-            herobg3.style.opacity = 0;
-            herobox3.style.opacity = 0;
-            herobg4.style.opacity = 1;
-            herobox4.style.opacity = 1;
-        } else if (num == 4) {
-            herobg4.style.opacity = 0;
-            herobox4.style.opacity = 0;
-            herobg.style.opacity = 1;
-            herobox.style.opacity = 1;
+        var len = 5;
+        var changeImage = function () {
+            if (num == 1) {
+                herobg.style.opacity = 0;
+                herobox.style.opacity = 0;
+                herobg2.style.opacity = 1;
+                herobox2.style.opacity = 1;
+            } else if (num == 2) {
+                herobg2.style.opacity = 0;
+                herobox2.style.opacity = 0;
+                herobg3.style.opacity = 1;
+                herobox3.style.opacity = 1;
+            } else if (num == 3) {
+                herobg3.style.opacity = 0;
+                herobox3.style.opacity = 0;
+                herobg4.style.opacity = 1;
+                herobox4.style.opacity = 1;
+            } else if (num == 4) {
+                herobg4.style.opacity = 0;
+                herobox4.style.opacity = 0;
+                herobg.style.opacity = 1;
+                herobox.style.opacity = 1;
+            }
+            num = num + 1;
+            if (num == len) {
+                num = 1;
+            }
+        };
+
+        setInterval(changeImage, delayInSeconds * 1000);
+    }
+
+    // Remove updates button when enviro section is in view (or past)
+    var handlerFired;
+    window.addEventListener('scroll', function (e) {
+        var containerEnv = document.querySelector('#updates');
+        var updateBtn = document.querySelector('#fixedbtn');
+
+        if (!isElementInOrPastViewport(containerEnv)) {
+            updateBtn.style.display = 'none';
+        } else {
+            updateBtn.style.display = 'block';
         }
-        num = num + 1;
-        if (num == len) {
-            num = 1;
-        }
-    };
-
-    setInterval(changeImage, delayInSeconds * 1000);
+    });
 }
+
 window.onload = function () {
     start();
 };
