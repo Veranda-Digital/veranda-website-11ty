@@ -22,7 +22,7 @@ function isElementInOrPastViewport(el) {
 }
 
 // Mobile Menu Toggle
-document.getElementById('menuToggle').addEventListener('click', function () {
+document.getElementById('menuToggle').addEventListener('click', function (event) {
     const menu = document.getElementById('mobileMenu');
     const hamburger = document.getElementById('hamburger');
 
@@ -31,10 +31,28 @@ document.getElementById('menuToggle').addEventListener('click', function () {
 
     // Animate the hamburger into an X
     if (!menu.classList.contains('hidden')) {
-        hamburger.children[0].style.transform = 'rotate(45deg) translateY(7px)';
+        hamburger.children[0].style.transform = 'rotate(45deg) translateY(4px) translateX(4px)';
         hamburger.children[1].style.opacity = '0';
-        hamburger.children[2].style.transform = 'rotate(-45deg) translateY(-7px)';
+        hamburger.children[2].style.transform = 'rotate(-45deg) translateY(-4px) translateX(4px)';
+
+        // Add event listener to close when clicking outside
+        document.addEventListener('click', closeMenuOnOutsideClick);
     } else {
+        resetHamburger();
+    }
+
+    // Prevent the click from propagating to the document
+    event.stopPropagation();
+
+    function closeMenuOnOutsideClick(e) {
+        if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+            menu.classList.add('hidden');
+            resetHamburger();
+            document.removeEventListener('click', closeMenuOnOutsideClick);
+        }
+    }
+
+    function resetHamburger() {
         hamburger.children[0].style.transform = '';
         hamburger.children[1].style.opacity = '';
         hamburger.children[2].style.transform = '';
@@ -49,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('Current Path:', window.location.pathname);
 
     navLinks.forEach(function (link) {
+        console.log('NavLinks:', link.getAttribute('href'));
         if (link.getAttribute('href') === currentPath) {
             link.classList.add('active-link');
         }
