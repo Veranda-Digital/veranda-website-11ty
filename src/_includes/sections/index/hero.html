@@ -1,0 +1,38 @@
+<div class="bg-slate">
+    <div class="bg-primary  ztablet:rounded-bl-[8em]">
+        <div class="relative">
+            <div class="hero-bg relative"></div>
+            {% include "../../partials/nav.html" %}
+
+            <!-- Columns -->
+            <div class="max-w-[120em] m-auto between relative flex flex-col-reverse justify-center pb-4 ztablet:flex-row ztablet:z-0 ">
+
+                <!-- Text -->
+                <div style="flex: 1 0 37%;" class="m-auto w-[86vw] max-w-7xl text-center text-white ztablet:pl-16 ztablet:text-left ztablet:pt-[6em] ztablet:pb-[5em] zdesktop:pt-[1em] zlgdesktop:pl-20">
+                    <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" data-aos-once="true"
+                    class="font-sansl tracking-tight text-xlg zmobile:text-xxlg ztablet:pb-8 ztablet:text-huge zlgdesktop:text-xhuge">{{site.topHeader}}</h1>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200" data-aos-once="true" data-aos-anchor-placement="top-bottom"  
+                    class="ztablet:pl-3 pb-8 text-med leading-6 ztablet:text-xlg zlgdesktop:text-xxlg ztablet:pr-7">{% render "./section_content/hero.md" %}</p>
+                    <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1600"  data-aos-once="true" data-aos-anchor-placement="top-bottom" 
+                    href="#solution" class="hover:text-salmon text-brightgreen font-sanm  text-sm  ztablet:text-med ztablet:pt-10 ">
+                        <p class=" ztablet:pl-3 leading-[0.8em] ztablet:inline">Learn More</p><span class="scroll-down-arrow material-icons ztablet:top-[6px] relative">expand_more</span>
+                    </a>
+                </div>
+
+                <!-- Pictures -->
+                <div style="flex: 1 0 50%;" class="relative t-0 l-0">
+                    <img id="herobg" alt="Porch with swinging chair" class="min-h-[18em] max-h-[45vh]  ztablet:max-h-[100vh] absolute ml-6 rounded-bl-[6em] ztablet:rounded-bl-0 ztablet:top-[-12em] zdesktop:top-[-16em] zlgdesktop:top-[-10em] ztablet:absolute object-cover w-full h-[18em] zmobile:h-[23em] ztablet:h-[45em] ztablet:rounded-tl-[50em] ztablet:rounded-bl-[0px]" src="/assets/hero_1.webp"></img>
+                    <img id="herobg2" alt="Porch with swinging chair" class="min-h-[18em] max-h-[45vh] ztablet:max-h-[100vh] absolute ml-6 rounded-bl-[6em] ztablet:rounded-bl-0 ztablet:top-[-12em] zdesktop:top-[-16em] zlgdesktop:top-[-10em] ztablet:absolute object-cover w-full h-[18em] zmobile:h-[23em] ztablet:h-[45em] ztablet:rounded-tl-[50em] ztablet:rounded-bl-[0px]" src="/assets/hero_2.webp"></img>
+                    <img id="herobg3" alt="Porch with swinging chair" class=" min-h-[10em] max-h-[45vh] ztablet:max-h-[100vh] absolute ml-6 rounded-bl-[6em] ztablet:rounded-bl-0 ztablet:top-[-12em] zdesktop:top-[-16em] zlgdesktop:top-[-10em] ztablet:absolute object-cover w-full h-[18em] zmobile:h-[23em] ztablet:h-[45em] ztablet:rounded-tl-[50em] ztablet:rounded-bl-[0px]" src="/assets/hero_3.webp"></img>
+                    <img id="herobg4" alt="Porch with swinging chair" class=" min-h-[10em] max-h-[45vh] ztablet:max-h-[100vh] ml-6 rounded-bl-[6em] ztablet:rounded-bl-0 ztablet:top-[-12em] zdesktop:top-[-16em] zlgdesktop:top-[-10em] ztablet:absolute object-cover w-full h-[18em] zmobile:h-[23em] ztablet:h-[45em] ztablet:rounded-tl-[50em] ztablet:rounded-bl-[0px]" src="/assets/hero_4.webp"></img>
+                    <div class="h-[calc(36vw/2)] ztablet:h-[calc(16vw/2)] max-h-[6em]">
+                        <img id="herobox" alt="Veranda Box Render" class="ztablet:ml-2 absolute right-0 left-0 m-auto bottom-0 object-cover w-[100vw] max-w-2xl ztablet:w-[50vw]" src="/assets/hero_1box.webp"></img>
+                        <img id="herobox2" alt="Veranda Box Render" class="ztablet:ml-2 absolute right-0 left-0 m-auto bottom-0 object-cover w-[100vw] max-w-2xl ztablet:w-[50vw]" src="/assets/hero_2box.webp"></img>
+                        <img id="herobox3" alt="Veranda Box Render" class="ztablet:ml-2 absolute right-0 left-0 m-auto bottom-0 object-cover w-[100vw] max-w-2xl ztablet:w-[50vw]" src="/assets/hero_3box.webp"></img>
+                        <img id="herobox4" alt="Veranda Box Render" class="ztablet:ml-2 absolute right-0 left-0 m-auto bottom-0 object-cover w-[100vw] max-w-2xl ztablet:w-[50vw]" src="/assets/hero_4box.webp"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

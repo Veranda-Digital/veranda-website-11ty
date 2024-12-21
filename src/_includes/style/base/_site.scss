@@ -164,6 +164,10 @@ input::-moz-placeholder {
     }
 }
 
+.active-link {
+    color: white;
+}
+
 .scroll-down-arrow {
     position: relative;
     -webkit-animation: bounce 1000ms ease infinite;
@@ -214,9 +218,20 @@ input::-moz-placeholder {
 .formkit-close {
     right: 0 !important;
     z-index: 100;
+    svg {
+        margin: auto;
+    }
 }
 
 .formkit-overlay {
     // background: rgba(11, 32, 27, 0.9) !important;
     background: rgba(77, 77, 77, 0.92) !important;
+}
+
+.fade-right {
+    position: relative;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0.05) 98%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0.05) 98%);
+    mask-size: cover;
+    -webkit-mask-size: cover;
 }
