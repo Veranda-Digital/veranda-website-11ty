@@ -1,1 +1,1 @@
-Stay in control of your deliveries with the Veranda Dashboard. Check the status of your orders, control your Veranda Box, set locking schedules or share access with others. Simply connect all your online merchants and let Veranda handle the rest.
+Stay in control of your deliveries with the Veranda Dashboard. Check the status of your orders, control your Veranda Box, set locking schedules or share access with friends, family, and shippers. Simply connect all your online merchants and let Veranda handle the rest.

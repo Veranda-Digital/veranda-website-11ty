@@ -1,1 +1,1 @@
-We make food deliveries more convenient, secure, and manageable.
+We make deliveries more convenient, secure, and manageable.
