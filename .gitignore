@@ -71,3 +71,6 @@ typings/
 yarn-error.log
 .netlify/
 dist
+
+#cursor
+.cursor

@@ -1,0 +1,47 @@
+---
+title: News
+heroLabel: Veranda
+heroTitle: News & Press
+description: The latest news, announcements, and press releases from Veranda Digital Inc.
+url: 'https://getveranda.com/news'
+layout: 'layouts/defaultsansloader.html'
+permalink: '/news/'
+---
+
+<section id="hero" class="relative w-full">{% include "partials/pageHero.html" %}</section>
+
+<section id="news" class="relative w-full">
+    <div class="bg-slate pt-12 pb-20 ztablet:pt-20">
+        <div class="m-auto grid w-[86vw] max-w-5xl grid-cols-1 gap-8 ztablet:grid-cols-2">
+            {% assign articles = collections.news | reverse %}
+            {% for article in articles %}
+            <a
+                href="{{ article.url }}"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-once="true"
+                class="group flex flex-col overflow-hidden rounded-[20px] bg-primary transition-transform hover:mt-[-0.3em]"
+            >
+                <div class="aspect-[16/9] w-full overflow-hidden">
+                    <img
+                        class="h-full w-full object-cover opacity-90 transition-transform duration-500 group-hover:scale-105"
+                        src="{{ article.data.heroImage | default: '/assets/DreamBox-10.jpg' }}"
+                        alt="{{ article.data.title }}"
+                    />
+                </div>
+                <div class="flex flex-1 flex-col p-6">
+                    <div class="flex items-center gap-3 pb-3">
+                        <span class="rounded-3xl bg-brightgreen px-3 py-1 text-xsm font-bold tracking-tight text-slate">{{ article.data.newsType | default: "News" }}</span>
+                        <span class="font-basic text-xsm text-white text-opacity-70">{{ article.date | date: "%B %-d, %Y" }}</span>
+                    </div>
+                    <h2 class="pb-3 font-sansmd text-lg font-medium leading-[1.2] tracking-tight text-white">{{ article.data.title }}</h2>
+                    <p class="text-press text-white text-opacity-80">{{ article.data.description }}</p>
+                    <span class="mt-auto pt-5 font-sansmd text-press font-medium text-brightgreen">Read more &rarr;</span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="updates" class="relative w-full">{% include "sections/updates.html" %}</section>
