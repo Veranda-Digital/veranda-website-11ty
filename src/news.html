@@ -1,6 +1,5 @@
 ---
 title: News
-heroLabel: Veranda
 heroTitle: News & Press
 description: The latest news, announcements, and press releases from Veranda Digital Inc.
 url: 'https://getveranda.com/news'
@@ -12,7 +11,7 @@ permalink: '/news/'
 
 <section id="news" class="relative w-full">
     <div class="bg-slate pt-12 pb-20 ztablet:pt-20">
-        <div class="m-auto grid w-[86vw] max-w-5xl grid-cols-1 gap-8 ztablet:grid-cols-2">
+        <div class="m-auto grid w-[86vw] max-w-7xl grid-cols-1 gap-8 ztablet:grid-cols-2 ztablet:gap-16">
             {% assign articles = collections.news | reverse %}
             {% for article in articles %}
             <a
@@ -20,13 +19,14 @@ permalink: '/news/'
                 data-aos="fade-up"
                 data-aos-duration="800"
                 data-aos-once="true"
-                class="group flex flex-col overflow-hidden rounded-[20px] bg-primary transition-transform hover:mt-[-0.3em]"
+                class="group flex flex-col overflow-hidden rounded-[20px] bg-primary"
             >
                 <div class="aspect-[16/9] w-full overflow-hidden">
                     <img
                         class="h-full w-full object-cover opacity-90 transition-transform duration-500 group-hover:scale-105"
-                        src="{{ article.data.heroImage | default: '/assets/DreamBox-10.jpg' }}"
+                        src="{{ article.data.tileImage | default: article.data.heroImage | default: '/assets/DreamBox-10.jpg' }}"
                         alt="{{ article.data.title }}"
+                        {% if article.data.tileImagePosition %}style="object-position: {{ article.data.tileImagePosition }};"{% endif %}
                     />
                 </div>
                 <div class="flex flex-1 flex-col p-6">

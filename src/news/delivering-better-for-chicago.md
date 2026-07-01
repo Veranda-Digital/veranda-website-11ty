@@ -1,7 +1,7 @@
 ---
 title: Delivering Better for Chicago
 newsType: Press Release
-date: 2024-11-19 12:00:00
+date: 2025-1-13 12:00:00
 description: >
     In a bold step toward revolutionizing food security and grocery delivery, Veranda has
     teamed up with Dion's Chicago Dream to introduce Dream Box—a first-of-its-kind technology—
@@ -10,6 +10,7 @@ url: 'https://getveranda.com/news/delivering-better-for-chicago'
 type: 'article'
 image: 'https://getveranda.com/public/press-release.png'
 heroImage: '/assets/DreamBox-10.jpg'
+tileImagePosition: 'center top'   # optional — CSS object-position
 layout: 'layouts/news-article.html'
 permalink: '/news/delivering-better-for-chicago/'
 tags: news
@@ -62,7 +63,7 @@ furthering their mission of ensuring reliable and accessible nutrition for Chica
 
 <!-- Image Column -->
 <div class="flex flex-[1] items-center justify-center zmobile:w-full">
-<img class="rounded-[20px] object-cover" src="/assets/DreamBox-16.jpg" alt="Dion Dawson" />
+{% articleImage { src: "/assets/DreamBox-16.jpg", alt: "Dion Dawson" } %}
 </div>
 </div>
 
@@ -100,9 +101,7 @@ scalable, and environmentally responsible way for all consumers. “This partner
 dignity, accessibility, and innovation. There is an opportunity in front of us that is a chance to illuminate last-mile delivery in a way that will
 impact many generations to come.”
 </div>
-<div class="w-full overflow-hidden rounded-[20px]">
-<img class="w-full object-contain" src="/assets/DreamBoxes.jpg" alt="Dream Box" />
-</div>
+{% articleImage { src: "/assets/DreamBoxes.jpg", alt: "Dream Box", variant: "full" } %}
 <div class="pt-10 pb-20 text-press text-white text-opacity-80 ztablet:text-left ztablet:text-press">
 As Veranda and Dion’s Chicago Dream introduce Dreambox to Chicago, these visionary organizations are paving the way for a future where food access
 is equitable, efficient, and environmentally sustainable. Together, they invite Chicago and grocery providers to join this transformative journey,

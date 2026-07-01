@@ -19,7 +19,7 @@
                                         <div
                                             class="relative top-[6px] inline-flex max-w-[55em] overflow-hidden rounded-tr-[200px] ztablet:absolute ztablet:w-[60vw] ztablet:rounded-tr-[200px] zdesktop:rounded-tr-[300px] zlgdesktop:rounded-tr-[400px]"
                                         >
-                                            <img class="fade-right object-cover opacity-90" src="{{ heroImage | default: '/assets/DreamBox-10.jpg' }}" alt="{{ title }}" />
+                                            <img class="fade-right object-cover opacity-90" src="{{ heroImage | default: '/assets/DreamBox-10.jpg' }}" alt="{{ title }}" {% if heroImagePosition %}style="object-position: {{ heroImagePosition }};"{% endif %} />
                                         </div>
                                     </div>
 
@@ -57,6 +57,8 @@
                 <section id="news-article" class="relative w-full">
                     {{ content }}
                 </section>
+
+                {% include "partials/news-article-nav.html" %}
 
                 <!-- UPDATES -->
                 <section id="updates" class="relative w-full">{% include "sections/updates-simple.html" %}</section>

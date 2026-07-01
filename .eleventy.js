@@ -1,6 +1,27 @@
 const fs = require('fs');
 
 module.exports = function (eleventyConfig) {
+    eleventyConfig.addFilter('getNewsNeighbors', function (collection, currentUrl) {
+        const articles = [...collection].sort((a, b) => a.date - b.date);
+        const index = articles.findIndex((item) => item.url === currentUrl);
+        if (index === -1) return { prev: null, next: null };
+
+        return {
+            prev: index > 0 ? articles[index - 1] : null,
+            next: index < articles.length - 1 ? articles[index + 1] : null
+        };
+    });
+
+    eleventyConfig.addShortcode('articleImage', function ({ src, alt = '', position = '', variant = 'inline' }) {
+        const styleAttr = position ? ` style="object-position: ${position};"` : '';
+
+        if (variant === 'full') {
+            return `<div class="w-full overflow-hidden rounded-[20px]"><img class="w-full object-contain"${styleAttr} src="${src}" alt="${alt}" /></div>`;
+        }
+
+        return `<img class="w-full rounded-[20px] object-cover"${styleAttr} src="${src}" alt="${alt}" />`;
+    });
+
     // Watch CSS files for changes
     eleventyConfig.setBrowserSyncConfig({
         files: './_site/css/**/*.css'

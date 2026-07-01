@@ -1,0 +1,33 @@
+{% assign neighbors = collections.news | getNewsNeighbors: page.url %}
+{% if neighbors.prev or neighbors.next %}
+<section id="news-article-nav" class="relative w-full bg-slate pb-16 ztablet:pb-20">
+    <div class="m-auto w-80vw max-w-5xl border-t border-white border-opacity-10 pt-12">
+        <p class="pb-8 text-center font-sans text-base font-bold tracking-tight text-salmon ztablet:text-lg">Continue Reading</p>
+        <div class="grid grid-cols-1 gap-6 ztablet:grid-cols-2 ztablet:gap-8">
+            {% if neighbors.prev %}
+            <a
+                href="{{ neighbors.prev.url }}"
+                class="group flex flex-col rounded-[20px] bg-primary p-6 transition-transform hover:-translate-y-1 hover:bg-primary/90"
+            >
+                <span class="pb-3 font-sansmd text-press font-medium text-brightgreen">&larr; Previous</span>
+                <span class="pb-2 font-sansmd text-lg font-medium leading-[1.2] tracking-tight text-white">{{ neighbors.prev.data.title }}</span>
+                <span class="font-basic text-xsm text-white text-opacity-70">{{ neighbors.prev.date | date: "%B %-d, %Y" }}</span>
+            </a>
+            {% else %}
+            <div aria-hidden="true" class="hidden ztablet:block"></div>
+            {% endif %}
+
+            {% if neighbors.next %}
+            <a
+                href="{{ neighbors.next.url }}"
+                class="group flex flex-col rounded-[20px] bg-primary p-6 text-left transition-transform hover:-translate-y-1 hover:bg-primary/90 ztablet:text-right"
+            >
+                <span class="pb-3 font-sansmd text-press font-medium text-brightgreen ztablet:ml-auto">Next &rarr;</span>
+                <span class="pb-2 font-sansmd text-lg font-medium leading-[1.2] tracking-tight text-white">{{ neighbors.next.data.title }}</span>
+                <span class="font-basic text-xsm text-white text-opacity-70">{{ neighbors.next.date | date: "%B %-d, %Y" }}</span>
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% endif %}
