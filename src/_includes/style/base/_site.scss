@@ -156,6 +156,10 @@ input::-moz-placeholder {
     }
 }
 
+html.skip-preloader #preloader {
+    display: none !important;
+}
+
 @media (max-width: 500px) {
     #preloader.loaded:before,
     #preloader.loaded:after {
