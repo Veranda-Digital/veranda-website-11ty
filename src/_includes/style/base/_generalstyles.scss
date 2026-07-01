@@ -6,6 +6,20 @@ body {
     scroll-behavior: smooth;
 }
 
+// cursor is an inherited property, so child text/icons/images pick this up too
+a,
+button,
+label,
+summary,
+[role='button'] {
+    cursor: pointer;
+}
+
+button:disabled,
+[aria-disabled='true'] {
+    cursor: default;
+}
+
 /*************
 SUPER-GENERAL STYLES
 **************/

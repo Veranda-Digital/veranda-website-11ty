@@ -72,5 +72,5 @@ yarn-error.log
 .netlify/
 dist
 
-#cursor
+#Cursor
 .cursor

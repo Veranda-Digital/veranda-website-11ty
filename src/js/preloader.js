@@ -2,19 +2,27 @@
  * Preloader
  *****************/
 
-// Select elements
-const contentWrapper = document.getElementById('contentWrapper');
 const preloader = document.getElementById('preloader');
 
-// Check if navigation is internal
-if (!performance.getEntriesByType('navigation')[0].type.includes('back_forward')) {
-    // Show the preloader when the page is reloaded
-    window.addEventListener('load', () => {
-        setTimeout(function () {
-            preloader.classList.add('loaded');
-        }, 300);
-    });
+if (!preloader || document.documentElement.classList.contains('skip-preloader')) {
+    if (typeof window.startPageAnimations === 'function') {
+        window.startPageAnimations({ earlyStart: true });
+    }
 } else {
-    // Skip the preloader for internal navigation
-    preloader.classList.add('loaded');
+    function finishIntro() {
+        preloader.classList.add('loaded');
+        if (typeof window.startPageAnimations === 'function') {
+            window.startPageAnimations({ introPath: true });
+        }
+    }
+
+    function scheduleFinishIntro() {
+        setTimeout(finishIntro, 300);
+    }
+
+    if (document.readyState === 'complete') {
+        scheduleFinishIntro();
+    } else {
+        window.addEventListener('load', scheduleFinishIntro);
+    }
 }

@@ -1,6 +1,48 @@
 <head>
     <meta charset="UTF-8" />
 
+    <script>
+        (function () {
+            function cameFromAnotherPageOnSite() {
+                if (!document.referrer) return false;
+                try {
+                    var ref = new URL(document.referrer);
+                    if (ref.host !== window.location.host) return false;
+                    // Same-page referrer means a refresh, not internal navigation
+                    return ref.pathname !== window.location.pathname;
+                } catch (e) {
+                    return false;
+                }
+            }
+
+            var path = window.location.pathname;
+            var isHomepage = path === '/' || path === '/index.html';
+
+            if (!isHomepage) {
+                sessionStorage.setItem('veranda-visited', '1');
+                return;
+            }
+
+            var navEntry = performance.getEntriesByType('navigation')[0];
+            var navType = navEntry && navEntry.type;
+            var isReload = navType === 'reload';
+            var isBackForward = navType && navType.includes('back_forward');
+            var hasVisitedSite = sessionStorage.getItem('veranda-visited') === '1';
+
+            // Always play the intro on a homepage refresh
+            if (isReload) return;
+
+            if (isBackForward || cameFromAnotherPageOnSite() || (hasVisitedSite && navType === 'navigate')) {
+                document.documentElement.classList.add('skip-preloader');
+            }
+        })();
+    </script>
+    <style>
+        html.skip-preloader #preloader {
+            display: none !important;
+        }
+    </style>
+
     <title>{{ title | default: site.title }}</title>
     <meta name="description" content="{{ description | default: site.description }}" />
     <meta name="robots" content="index,follow" />
@@ -98,5 +140,38 @@
 <script src="/node_modules/aos/dist/aos.js"></script>
 <link rel="stylesheet" href="/node_modules/aos/dist/aos.css" />
 <script>
-    AOS.init();
+    window.PRELOADER_SKIP_DELAY_MS = 400;
+    window.AOS_DELAY_REDUCTION_MS = 100;
+
+    window.startPageAnimations = function (options) {
+        options = options || {};
+        if (typeof AOS === 'undefined') return;
+
+        var reduction = 0;
+        if (options.earlyStart) {
+            reduction = window.PRELOADER_SKIP_DELAY_MS;
+        } else if (!options.introPath) {
+            reduction = window.AOS_DELAY_REDUCTION_MS;
+        }
+
+        if (reduction > 0) {
+            document.querySelectorAll('[data-aos][data-aos-delay]').forEach(function (el) {
+                var delay = parseInt(el.getAttribute('data-aos-delay'), 10);
+                if (!isNaN(delay)) {
+                    el.setAttribute('data-aos-delay', String(Math.max(0, delay - reduction)));
+                }
+            });
+        }
+
+        AOS.init();
+    };
+
+    var isHomepage = window.location.pathname === '/' || window.location.pathname === '/index.html';
+    var skipIntro = document.documentElement.classList.contains('skip-preloader');
+
+    // Intro path: preloader.js calls startPageAnimations() after the intro finishes.
+    // Skip path: preloader.js calls startPageAnimations({ earlyStart: true }).
+    if (!isHomepage) {
+        startPageAnimations();
+    }
 </script>
