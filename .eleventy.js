@@ -1,6 +1,15 @@
 const fs = require('fs');
 
 module.exports = function (eleventyConfig) {
+    eleventyConfig.addCollection('newsTypes', function (collectionApi) {
+        const types = [
+            ...new Set(
+                collectionApi.getFilteredByTag('news').map((item) => item.data.newsType || 'News')
+            )
+        ];
+        return types.sort();
+    });
+
     eleventyConfig.addFilter('getNewsNeighbors', function (collection, currentUrl) {
         const articles = [...collection].sort((a, b) => a.date - b.date);
         const index = articles.findIndex((item) => item.url === currentUrl);

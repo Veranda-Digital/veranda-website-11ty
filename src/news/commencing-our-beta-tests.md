@@ -1,6 +1,6 @@
 ---
 title: Commencing our Beta Tests
-newsType: Update
+newsType: Press Release
 date: 2026-04-30 12:00:00
 description: >
     Veranda is beginning beta testing of the Veranda system with select households,

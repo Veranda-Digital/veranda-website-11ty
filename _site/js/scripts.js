@@ -62,6 +62,87 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// News index type filter
+document.addEventListener('DOMContentLoaded', function () {
+    var filterRoot = document.getElementById('newsTypeFilter');
+    var filterBtn = document.getElementById('newsTypeFilterBtn');
+    var filterMenu = document.getElementById('newsTypeFilterMenu');
+    var filterLabel = document.getElementById('newsTypeFilterLabel');
+    var filterChevron = document.getElementById('newsTypeFilterChevron');
+    var grid = document.getElementById('newsGrid');
+
+    if (!filterRoot || !filterBtn || !filterMenu || !grid) return;
+
+    var options = filterMenu.querySelectorAll('.news-type-option');
+
+    function closeFilterMenu() {
+        filterMenu.classList.add('hidden');
+        filterBtn.setAttribute('aria-expanded', 'false');
+        if (filterChevron) filterChevron.classList.remove('rotate-180');
+    }
+
+    function openFilterMenu() {
+        filterMenu.classList.remove('hidden');
+        filterBtn.setAttribute('aria-expanded', 'true');
+        if (filterChevron) filterChevron.classList.add('rotate-180');
+    }
+
+    function applyNewsFilter(selected) {
+        options.forEach(function (option) {
+            var isSelected = option.dataset.value === selected;
+            option.setAttribute('aria-selected', isSelected ? 'true' : 'false');
+            option.classList.toggle('text-white', isSelected);
+            option.classList.toggle('text-slate', !isSelected);
+            if (isSelected) {
+                filterLabel.textContent = option.textContent.trim();
+            }
+        });
+
+        grid.querySelectorAll('.news-card').forEach(function (card) {
+            var show = selected === 'all' || card.dataset.newsType === selected;
+            card.classList.toggle('hidden', !show);
+            card.classList.remove('aos-animate');
+        });
+
+        requestAnimationFrame(function () {
+            if (typeof AOS !== 'undefined') {
+                AOS.refreshHard();
+            }
+        });
+    }
+
+    filterBtn.addEventListener('click', function (event) {
+        event.stopPropagation();
+        if (filterMenu.classList.contains('hidden')) {
+            openFilterMenu();
+        } else {
+            closeFilterMenu();
+        }
+    });
+
+    options.forEach(function (option) {
+        option.addEventListener('click', function (event) {
+            event.stopPropagation();
+            applyNewsFilter(option.dataset.value);
+            closeFilterMenu();
+        });
+    });
+
+    document.addEventListener('click', function (event) {
+        if (!filterRoot.contains(event.target)) {
+            closeFilterMenu();
+        }
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            closeFilterMenu();
+        }
+    });
+
+    applyNewsFilter('all');
+});
+
 //Scripts ONLY for the homepage
 if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
     // Change Hero Background and Box images
