@@ -21,7 +21,7 @@
 
     <!-- Pill container with nav buttons -->
     <div
-        class="fixed right-4 top-5 z-10 hidden space-x-1 rounded-4xl bg-brightgreen px-4 py-2 zlgdesktop:right-12 zlgdesktop:top-8 zlgdesktop:flex zlgdesktop:px-2 zlgdesktop:py-2 zuwdesktop:right-[calc(50vw-57em)]"
+        class="fixed right-4 top-5 z-10 hidden space-x-1 rounded-4xl bg-brightgreen px-4 py-2 zdesktop:right-12 zdesktop:top-8 zdesktop:flex zdesktop:px-2 zdesktop:py-2 zuwdesktop:right-[calc(50vw-57em)]"
     >
         <a href="/" class="rounded-3xl bg-brightgreen px-5 py-2 text-xsm font-semibold text-slate hover:mt-[-0.1em] ztablet:text-base">Veranda</a>
         <a href="/how-it-works/" class="rounded-3xl bg-brightgreen px-5 py-2 text-xsm font-semibold text-slate hover:mt-[-0.1em] ztablet:text-base">How It Works</a>
@@ -37,9 +37,9 @@
     </div>
 
     <!--  Mobile Menu -->
-    <div class="fixed right-4 top-5 z-10">
+    <div class="fixed right-4 top-5 z-10 ztablet:right-12 ztablet:top-8">
         <!-- Hamburger Icon -->
-        <button id="menuToggle" class="flex h-10 w-10 items-center justify-center rounded-full bg-brightgreen zlgdesktop:hidden">
+        <button id="menuToggle" class="flex h-10 w-10 items-center justify-center rounded-full bg-brightgreen zdesktop:hidden">
             <div id="hamburger" class="space-y-1">
                 <span class="block h-0.5 w-6 bg-slate transition-transform"></span>
                 <span class="block h-0.5 w-6 bg-slate transition-transform"></span>
@@ -48,7 +48,7 @@
         </button>
 
         <!-- Mobile Dropdown Menu -->
-        <div id="mobileMenu" class="fixed top-20 right-4 flex hidden flex-col space-y-6 rounded-2xl bg-brightgreen p-4 zlgdesktop:hidden">
+        <div id="mobileMenu" class="fixed top-20 right-4 ztablet:top-24 ztablet:right-12 flex hidden flex-col space-y-6 rounded-2xl bg-brightgreen p-4 zdesktop:hidden">
             <a href="/" class="px-2 text-base font-bold tracking-tight text-slate hover:mt-[-0.2em]"> About Veranda </a>
             <a href="/how-it-works/" class="px-2 text-base font-bold tracking-tight text-slate hover:mt-[-0.2em]"> How It Works </a>
             <a href="/our-team/" class="px-2 text-base font-bold tracking-tight text-slate hover:mt-[-0.2em]"> Our Team </a>
