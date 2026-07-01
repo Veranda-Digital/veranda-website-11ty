@@ -14,6 +14,9 @@
 
             <main id="contentWrapper" class="min-h-screen">
                 {{ content }}
+                {% unless page.url == "/" %}
+                <section id="updates" class="relative w-full">{% include "sections/updates-simple.html" %}</section>
+                {% endunless %}
                 <footer class="bottom">{% include "sections/footer.html" %}</footer>
             </main>
         </div>
