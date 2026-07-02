@@ -78,7 +78,8 @@ permalink: '/news/'
                 </div>
                 <div class="flex flex-1 flex-col p-6">
                     <div class="flex items-center gap-3 pb-3">
-                        <span class="rounded-3xl bg-brightgreen px-3 py-1 text-xsm font-bold tracking-tight text-slate">{{ article.data.newsType | default: "News" }}</span>
+                        {% assign type = article.data.newsType | default: "News" %}
+                        <span class="rounded-3xl px-3 py-1 text-xsm font-bold tracking-tight text-slate {% if type == 'Article' %}bg-salmon{% else %}bg-brightgreen{% endif %}">{{ type }}</span>
                         <span class="font-basic text-xsm text-white text-opacity-70">{{ article.date | date: "%B %-d, %Y" }}</span>
                     </div>
                     <h2 class="pb-3 font-sansmd text-lg font-medium leading-[1.2] tracking-tight text-white">{{ article.data.title }}</h2>

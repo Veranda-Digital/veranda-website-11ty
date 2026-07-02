@@ -1,15 +1,16 @@
 ---
-title: Open Letter from our CEO
+title: A Letter From Our CEO, Nic Durish
 newsType: Press Release
-date: 2026-01-26 12:00:00
+date: 2026-06-30 12:00:00
 description: >
-    Terry Sweeney, CEO of Veranda Digital Inc., shares a letter on the company's mission,
-    the state of last-mile delivery, and why Veranda is building a better way forward
-    for households and communities.
+    Nic Durish shares an open letter on Veranda’s founding vision, 
+    his transition into the CEO role, and the company’s commitment 
+    to building more reliable delivery infrastructure.
 url: 'https://getveranda.com/news/open-letter-from-our-ceo'
 type: 'article'
 image: 'https://getveranda.com/public/press-release.png'
-heroImage: '/assets/hero_1.webp'
+heroImage: '/assets/news/open-letter-from-our-ceo-hero.jpg'
+tileImagePosition: 'center top'
 layout: 'layouts/news-article.html'
 permalink: '/news/open-letter-from-our-ceo/'
 tags: news
@@ -17,72 +18,31 @@ tags: news
 
 <div class="bg-slate pt-12 pb-3 ztablet:pt-20">
     <div data-aos-offset="0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" class="m-auto w-80vw max-w-5xl">
-        <div>
-            <h2 class="text-left font-sans text-press font-medium leading-[1.5] tracking-tight text-salmon ztablet:pb-4 ztablet:text-lg ztablet:leading-[1]">
-                For Immediate Release
-            </h2>
-            <h3 class="pb-8 text-left font-sansmd text-lg font-medium leading-[1.2] tracking-tight text-white ztablet:text-xlg">
-                Open Letter from our CEO
-            </h3>
-        </div>
         <div class="pb-10 text-press text-white text-opacity-80 ztablet:text-left ztablet:text-press">
-            When we founded Veranda, we started with a question that sounds simple but rarely gets answered well: why should receiving a delivery be harder than
-            ordering one? Every day, millions of households navigate missed windows, stolen packages, spoiled groceries, and the quiet frustration of waiting
-            around for something that was supposed to make life easier. We believe that convenience should not come with so many trade-offs.
+            When Terry Sweeney, Joshua Wong, and I founded Veranda, we came from very different backgrounds, but we were brought together by a shared belief: 
+            the way people receive food, packages, and everyday necessities has not kept pace with the rest of modern life.
+            <br /><br />
+            Terry had seen the effects of suboptimal food availability and delivery firsthand through decades of work as a CIO and analytics consultant for major North American grocers, as well as through his role in helping found the Canadian Food Bank system. Josh, an expert in RF and networking technologies and a former director at BlackBerry, recognized a lack of innovation in consumer hardware and their communication protocols. And I, through more than a decade of work in software development and Human-Computer Interaction - from studying the digital divide in rural communities, to developing accessible software for local governments, to working on mobile mesh network applications - consistently saw gaps in how software was being used to solve the very real problems people face daily.
+            <br /><br />
+            Different paths brought us to the same conclusion: access matters, delivery matters, and many of the most important tools of our modern world have not yet been fully leveraged in the final step between people and the food, packages, and necessities they rely on.
+            <br /><br />
+            That belief is why we started Veranda, and it is what continues to drive us. It is what has pushed us through long days, difficult technical problems, bug fixes, hardware iterations, software releases, and the countless details that have separated our idea from being a platform people can trust and rely on.
+            <br /><br />
+            Stepping into the role of Chief Executive Officer is both an honour and a great responsibility. I am committed to continuing the vision first put forward by Terry Sweeney, our original CEO, my co-founder, and now Chairman of our Board of Directors. Terry’s leadership helped give Veranda its foundation, and his continued role ensures that the original purpose of this company remains central as we grow. My responsibility now is to carry that vision forward with urgency, discipline, and care.
+            <br /><br />
+            My commitment is to help Veranda become the kind of company this problem deserves: technically strong, operationally disciplined, deeply collaborative, and relentlessly focused on real-world impact. We will continue to advance our hardware and software together, because the experience only works when the entire system works. We will continue to listen to users, partners, advisors, and early supporters. We will move quickly, but carefully. We will build with urgency, but also with respect for the trust placed in us.
+            <br /><br />
+            2026 is a pivotal year for Veranda. Our partnerships are expanding, our technologies are advancing rapidly, our early users are helping shape the experience in meaningful ways, and the need for better, more reliable delivery infrastructure is only becoming more obvious.
+            <br /><br />
+            To our partners, advisors, and early users: we are committed to you. Your vote of confidence means more than we can express. It is only with your support that we have built Veranda into a company with a real opportunity to change how deliveries are completed.
+            <br /><br />
+            To future partners: we believe the next chapter of delivery can only be built through collaboration. Retailers, grocers, logistics providers, property owners, and technology companies all have a role to play. Veranda intends to be a serious and trusted partner in that work.
+            <br /><br />
+            And to everyone who has ever missed a delivery, worried about a package, or rearranged a day around a doorstep: we hear you, and we hope very soon, to be of help.
+            <br /><br />
+            Nic Durish
         </div>
         <!-- ABOUT VERANDA -->
-        <h4 class="pt-6 pb-4 text-left font-sansmd text-lg font-medium leading-[1.2] tracking-tight text-brightgreen ztablet:text-lg">About Veranda</h4>
-        <div class="pb-10 text-press text-white text-opacity-80 ztablet:text-left ztablet:text-press">
-            Veranda reimagines grocery and package delivery by removing the need for delivery windows, offering a seamless, sustainable solution that reduces
-            environmental impact. With the Veranda system, customers can receive deliveries securely and reliably anytime, day or night, ensuring freshness while
-            eliminating timing constraints. Veranda was founded by three Canadian technologists, Terry Sweeney, Dr. Joshua Wong, and Nicolas Durish.
-        </div>
-
-        <!-- WHY NOW -->
-        <div class="flex h-auto flex-col items-center justify-between pb-6 zdesktop:flex-row zdesktop:gap-[6em] zdesktop:pb-0">
-            <!-- Text Column -->
-            <div class="flex flex-[1.1] flex-col items-start justify-start">
-                <h4 class="pt-6 pb-4 text-left font-sansmd text-lg font-medium leading-[1.2] tracking-tight text-brightgreen ztablet:text-lg">
-                    Why We Are Building Now
-                </h4>
-                <div class="pb-10 text-press text-white text-opacity-80 ztablet:text-left ztablet:text-press">
-                    The last mile has been treated as an afterthought for too long. Carriers optimize for throughput. Retailers optimize for checkout. Consumers are left
-                    to absorb the cost in stress, waste, and uncertainty. Veranda exists to close that gap—to give households a secure, always-available point of receipt
-                    that works with the rhythm of real life, not against it.
-                </div>
-            </div>
-
-            <!-- Image Column -->
-            <div class="flex flex-[1] items-center justify-center zmobile:w-full">
-                {% articleImage { src: "/assets/hero_2.webp", alt: "Veranda delivery system" } %}
-            </div>
-        </div>
-
-        <!-- OUR COMMITMENT -->
-        <h4 class="pt-6 pb-4 text-left font-sansmd text-lg font-medium leading-[1.2] tracking-tight text-brightgreen ztablet:text-lg">Our Commitment</h4>
-        <div class="pb-10 text-press text-white text-opacity-80 ztablet:text-left ztablet:text-press">
-            We are building Veranda with three commitments at the center of every decision. First, security: your deliveries should arrive safely, every time.
-            Second, sustainability: our system is designed to reduce waste, eliminate failed trips, and integrate responsibly into residential spaces. Third,
-            accessibility: better delivery should not be a luxury reserved for a few zip codes or a few retailers.
-        </div>
-
-        <!-- LOOKING AHEAD -->
-        <h4 class="pt-6 pb-4 text-left font-sansmd text-lg font-medium leading-[1.2] tracking-tight text-brightgreen ztablet:text-lg">Looking Ahead</h4>
-        <div class="pb-14 text-press text-white text-opacity-80 ztablet:text-left ztablet:text-press">
-            2026 is a pivotal year for Veranda. We are expanding partnerships, refining our product through real-world testing, and working alongside communities
-            who share our belief that delivery can be better. This letter is not a finish line—it is an invitation. To our partners, our early users, and everyone
-            who has ever missed a delivery and thought there must be a better way: we are building it, and we are glad you are here for it.
-        </div>
-        <div class="h-[0px] w-[238px] border border-salmon opacity-90"></div>
-        <div class="py-4 text-xlg font-extralight leading-[1.2] text-salmon text-opacity-90 zdesktop:pr-[100px] zdesktop:text-[2.8rem]">
-            Delivery should fit your life—not the other way around.
-        </div>
-        <div class="pb-6 text-med font-normal leading-[31px] text-salmon text-opacity-90">Terry Sweeney, CEO</div>
-        {% articleImage { src: "/assets/hero_1box.webp", alt: "Veranda Box", variant: "full" } %}
-        <div class="pt-10 pb-20 text-press text-white text-opacity-80 ztablet:text-left ztablet:text-press">
-            For more information on Veranda, visit
-            <a href="https://getveranda.com" class="underline">getveranda.com</a>. <br /><br />For all press or media inquiries, please contact us at
-            <a href="mailto:contact@getveranda.com" class="text-brightgreen underline">contact@getveranda.com</a>
-        </div>
+        
     </div>
 </div>
