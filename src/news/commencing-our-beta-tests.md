@@ -18,15 +18,15 @@ tags: news
 <div class="bg-slate pt-12 pb-3 ztablet:pt-20">
     <div data-aos-offset="0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" class="m-auto w-80vw max-w-5xl">
         <div class="pb-10 text-press text-white text-opacity-80 ztablet:text-left ztablet:text-press">
-            Veranda Digital Inc. is opening a limited invitation for early beta testers to help shape the next stage of our delivery platform!
+            Veranda Digital Inc. is inviting a limited group of early beta testers to help shape the next stage of our delivery platform.
             <br /><br />
-            We are looking for households across a range of demographics and lifestyles who regularly order packages, groceries, or other delivered goods. At this stage, we are especially interested in households in the Region of Waterloo and the Greater Toronto Area.
+            We are looking for households across a range of demographics and lifestyles that regularly order packages, groceries, or other delivered goods. At this stage, we are especially interested in households in the Region of Waterloo and the Greater Toronto Area.
             <br /><br />
             Selected beta testers can expect early access to Veranda’s technology in a real-world home environment, along with guidance from the Veranda team throughout the testing period.
         </div>
         <h4 class="pt-6 pb-4 text-left font-sansmd text-lg font-medium leading-[1.2] tracking-tight text-brightgreen ztablet:text-lg">What We Are Testing</h4>
         <div class="pb-10 text-press text-white text-opacity-80 ztablet:text-left ztablet:text-press">
-            This beta program is focused on understanding how Veranda fits into everyday household routines, delivery habits, and real-world front-door experiences. We hope for brutally honest feedback about the product experience, household needs, and opportunities to make the platform more useful in daily life.
+            This beta program is focused on understanding how Veranda fits into everyday household routines, delivery habits, and real-world front-door experiences. We hope for honest feedback about the product experience, household needs, and opportunities to make the platform more useful in daily life.
             <br /><br />
             The beta program is part of Veranda’s broader mission to improve the way people receive the items they depend on, while creating a smarter and more dependable connection between homes and modern delivery networks. Feedback from this round of testing will directly inform the production version of our software and hardware. 
         </div>

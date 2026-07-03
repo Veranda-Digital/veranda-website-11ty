@@ -28,13 +28,13 @@ tags: news
         </div>
         <!-- THE PROBLEM -->
         <h4 class="pt-6 pb-4 text-left font-sansmd text-lg font-medium leading-[1.2] tracking-tight text-brightgreen ztablet:text-lg">
-            The Quantifiable Damage of Blind Handoffs
+            The Real Cost of Blind Handoffs
         </h4>
         <div class="pb-10 text-press text-white text-opacity-80 ztablet:text-left ztablet:text-press">
             In an article on digitizing mid and last-mile logistics handovers,
             <a href="https://www.mckinsey.com/industries/logistics/our-insights/digitizing-mid-and-last-mile-logistics-handovers-to-reduce-waste#/" class="underline">McKinsey & Company</a>
             described blind handoffs as the moments when two or more parties are involved in transferring goods, and where miscommunication, information loss,
-            delays, and accountability issues are most likely to occur. McKinsey estimates that these handoff points create between <b class="text-salmon">$65 billion </b> and <b class="text-salmon">$95 billion
+            delays, and accountability issues are most likely to occur. McKinsey estimates that these handoff points create between <b class="text-salmon">$65 billion</b> and <b class="text-salmon">$95 billion
             in annual waste</b> in the United States, with B2C delivery waste alone estimated at <b class="text-salmon">$18 billion</b> to <b class="text-salmon">$28 billion per year</b>.
             <br /><br />
             That waste is not just an internal logistics problem. It shows up at the customer's front door.
@@ -49,7 +49,7 @@ tags: news
         </div>
         <!-- SCALE -->
         <h4 class="pt-6 pb-4 text-left font-sansmd text-lg font-medium leading-[1.2] tracking-tight text-brightgreen ztablet:text-lg">
-            The Fragile Final Step of Deliveries
+            The Fragile Final Step in Delivery
         </h4>
         <div class="pb-10 text-press text-white text-opacity-80 ztablet:text-left ztablet:text-press">
             The scale of the challenge is increasing. In the United States, <a href="https://www.census.gov/retail/ecommerce.html?utm_source=chatgpt.com" class="underline">the 
@@ -87,7 +87,7 @@ tags: news
             Why Grocery Delivery Raises the Stakes
         </h4>
         <div class="pb-10 text-press text-white text-opacity-80 ztablet:text-left ztablet:text-press">
-            For ordinary parcels, a failed handoff can mean theft, inconvenience, or replacement cost. But for groceries and perishables, the consequences can result in spoiled and wasted food. 
+            For ordinary parcels, a failed handoff can mean theft, inconvenience, or replacement costs. But for groceries and perishables, the consequences is spoiled and wasted food. 
             Online grocery is continuing to grow. <a href="https://agriculture.canada.ca/en/international-trade/market-intelligence/reports-and-guides/distribution-channel-series-grocery-ecommerce-market-united-states" class="underline">
             Agriculture and Agri-Food Canada</a> reported that U.S. <b class="text-salmon">grocery e-commerce grew at a 26.4% annual rate</b>
             between 2019 and 2023, reaching US$206.8 billion and nearly doubling its share of total grocery sales to 11.8 percent.
@@ -109,13 +109,13 @@ tags: news
         <div class="pb-10 text-press text-white text-opacity-80 ztablet:text-left ztablet:text-press">
             The Veranda Platform combines a secure delivery box with a digital dashboard that helps customers manage deliveries, control access, monitor status,
             and stay informed. The box is designed to keep packages safe from theft, help protect perishables with insulation and sensors, and allow authorized
-            access without requiring a customer to be home. It's been designed specifically for the needs of three distinct groups involved in a delivery:
+            access without requiring a customer to be home. It's designed specifically for the needs of three distinct groups involved in a delivery:
             <ul>
                 <li>Customers need confidence that their deliveries are secure, protected, and available on their schedule.</li>
                 <li>Delivery agents need a fast, simple, and reliable way to complete the stop without waiting, guessing, or leaving goods exposed.</li>
                 <li>Sellers, grocers, and retailers need fewer failed deliveries, fewer replacement costs, fewer support issues, and a stronger customer experience.</li>
             </ul>
-            By connecting these groups through a shared access and delivery platform, Veranda helps turn the final moments of delivery from a blind handoff into a managed
+            By connecting these groups through a shared access and delivery platform, Veranda helps turn the final steps of a delivery from a blind handoff into a managed
             one. A delivery can be authorized, completed, secured, and recorded without requiring the customer to be present. For grocery delivery, this creates
             the possibility of more flexible delivery windows, better protection for perishables, and more efficient routing.
             <br /><br />
