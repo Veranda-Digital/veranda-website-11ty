@@ -58,7 +58,7 @@ permalink: '/news/'
             </div>
         </div>
         <div id="newsGrid" class="m-auto grid w-[86vw] max-w-7xl grid-cols-1 gap-8 ztablet:grid-cols-2 ztablet:gap-16">
-            {% assign articles = collections.news | reverse %}
+            {% assign articles = collections.publishedNews | reverse %}
             {% for article in articles %}
             <a
                 href="{{ article.url }}"

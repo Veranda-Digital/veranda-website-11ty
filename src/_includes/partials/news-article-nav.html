@@ -1,4 +1,4 @@
-{% assign neighbors = collections.news | getNewsNeighbors: page.url %}
+{% assign neighbors = collections.publishedNews | getNewsNeighbors: page.url %}
 {% if neighbors.prev or neighbors.next %}
 <section id="news-article-nav" class="relative w-full bg-slate pb-16 ztablet:pb-20">
     <div class="m-auto w-80vw max-w-5xl border-t border-white border-opacity-10 pt-12">

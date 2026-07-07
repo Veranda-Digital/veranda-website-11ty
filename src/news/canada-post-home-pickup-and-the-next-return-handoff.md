@@ -1,5 +1,6 @@
 ---
 title: Canada Post Introduces Home Pickup
+draft: false
 newsType: Article
 date: 2026-07-07 12:00:00
 description: >

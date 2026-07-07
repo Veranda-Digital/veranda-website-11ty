@@ -1,10 +1,17 @@
 const fs = require('fs');
 
 module.exports = function (eleventyConfig) {
+    eleventyConfig.addCollection('publishedNews', function (collectionApi) {
+        return collectionApi.getFilteredByTag('news').filter((item) => !item.data.draft);
+    });
+
     eleventyConfig.addCollection('newsTypes', function (collectionApi) {
         const types = [
             ...new Set(
-                collectionApi.getFilteredByTag('news').map((item) => item.data.newsType || 'News')
+                collectionApi
+                    .getFilteredByTag('news')
+                    .filter((item) => !item.data.draft)
+                    .map((item) => item.data.newsType || 'News')
             )
         ];
         return types.sort();
