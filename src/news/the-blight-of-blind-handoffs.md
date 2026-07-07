@@ -19,8 +19,8 @@ tags: news
     <div data-aos-offset="0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" class="m-auto w-80vw max-w-5xl">
         <div class="pb-10 text-press text-white text-opacity-80 ztablet:text-left ztablet:text-press">
             A delivery can travel across cities, borders, warehouses, sortation centres, and routing systems with impressive precision.
-            Yet the moment that often determines whether the experience succeeds or fails is simply where the order is left, who can access it, and whether 
-            the customer can trust that it arrived safely.
+            Yet the moment that determines whether the experience is positive for a customer is simply where the order is left, who can access it, and whether 
+            they can trust that it arrived safely.
             <br /><br />
             This final step is where much of the promise of modern delivery breaks down. A package may be tracked every kilometre of its journey, only to be
             left exposed on a porch. A grocery order may arrive on time, only to sit outside in heat, cold, rain, or snow. A customer may receive
