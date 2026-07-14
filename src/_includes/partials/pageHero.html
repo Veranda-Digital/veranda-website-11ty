@@ -1,0 +1,30 @@
+<div class="{{ heroOuterBg | default: 'bg-slate' }}">
+    <div class="overflow-hidden bg-primary ztablet:rounded-bl-[8em]">
+        <div class="relative">
+            {% include "partials/nav.html" %}
+
+            <div class="max-w-[120em] m-auto pb-4">
+                <div class="m-auto w-[86vw] max-w-7xl pt-[2em] pb-[3em] text-center text-white ztablet:mx-0 ztablet:pl-16 ztablet:pt-[3em] ztablet:pb-[4em] ztablet:text-left zlgdesktop:pl-20 zlgdesktop:pt-[5em] zlgdesktop:pb-[6em]">
+                    <p
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="200"
+                        data-aos-once="true"
+                        class="font-sanm pb-0 pl-3 text-lg text-brightgreen ztablet:pb-4"
+                    >
+                        {{ heroLabel }}
+                    </p>
+                    <h1
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="400"
+                        data-aos-once="true"
+                        class="font-sansl text-xxxlg leading-[1.1] tracking-tight ztablet:text-xxxlg zdesktop:text-xxxxlg"
+                    >
+                        {{ heroTitle | default: title }}
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

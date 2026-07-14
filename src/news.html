@@ -1,0 +1,93 @@
+---
+title: News
+heroTitle: News & Press
+description: The latest news, announcements, and press releases from Veranda Digital Inc.
+url: 'https://getveranda.com/news'
+layout: 'layouts/defaultsansloader.html'
+permalink: '/news/'
+---
+
+<section id="hero" class="relative w-full">{% include "partials/pageHero.html" %}</section>
+
+<section id="news" class="relative w-full">
+    <div class="bg-slate pt-12 pb-20 ztablet:pt-20">
+        <div class="m-auto w-[86vw] max-w-7xl pb-10">
+            <div id="newsTypeFilter" class="relative w-full ztablet:w-fit">
+                <button
+                    id="newsTypeFilterBtn"
+                    type="button"
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-controls="newsTypeFilterMenu"
+                    class="block w-full cursor-pointer rounded-4xl border border-brightgreen border-opacity-40 bg-primary py-3 pl-5 pr-12 text-left font-sansmd text-sm font-semibold tracking-tight text-brightgreen focus:outline-none focus:ring-2 focus:ring-brightgreen ztablet:w-auto ztablet:min-w-[14em] ztablet:text-base"
+                >
+                    <span id="newsTypeFilterLabel">All</span>
+                </button>
+                <span id="newsTypeFilterChevron" class="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-brightgreen material-icons transition-transform">expand_more</span>
+                <ul
+                    id="newsTypeFilterMenu"
+                    role="listbox"
+                    aria-labelledby="newsTypeFilterBtn"
+                    class="absolute left-0 top-full z-20 mt-2 hidden w-full list-none flex-col space-y-4 rounded-2xl bg-brightgreen p-4 shadow-[0_8px_24px_rgba(0,0,0,0.25)] ztablet:w-auto ztablet:min-w-[14em]"
+                >
+                    <li role="presentation">
+                        <button
+                            type="button"
+                            role="option"
+                            aria-selected="true"
+                            data-value="all"
+                            class="news-type-option w-full px-2 text-left text-base font-bold tracking-tight text-slate hover:mt-[-0.1em]"
+                        >
+                            All
+                        </button>
+                    </li>
+                    {% for type in collections.newsTypes %}
+                    <li role="presentation">
+                        <button
+                            type="button"
+                            role="option"
+                            aria-selected="false"
+                            data-value="{{ type }}"
+                            class="news-type-option w-full px-2 text-left text-base font-bold tracking-tight text-slate hover:mt-[-0.1em]"
+                        >
+                            {{ type }}
+                        </button>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div id="newsGrid" class="m-auto grid w-[86vw] max-w-7xl grid-cols-1 gap-8 ztablet:grid-cols-2 ztablet:gap-16">
+            {% assign articles = collections.publishedNews | reverse %}
+            {% for article in articles %}
+            <a
+                href="{{ article.url }}"
+                data-news-type="{{ article.data.newsType | default: 'News' }}"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-once="true"
+                class="news-card group flex flex-col overflow-hidden rounded-[20px] bg-primary"
+            >
+                <div class="aspect-[16/9] w-full overflow-hidden">
+                    <img
+                        class="h-full w-full object-cover opacity-90 transition-transform duration-500 group-hover:scale-105"
+                        src="{{ article.data.tileImage | default: article.data.heroImage | default: '/assets/DreamBox-10.jpg' }}"
+                        alt="{{ article.data.title }}"
+                        {% if article.data.tileImagePosition %}style="object-position: {{ article.data.tileImagePosition }};"{% endif %}
+                    />
+                </div>
+                <div class="flex flex-1 flex-col p-6">
+                    <div class="flex items-center gap-3 pb-3">
+                        {% assign type = article.data.newsType | default: "News" %}
+                        <span class="rounded-3xl px-3 py-1 text-xsm font-bold tracking-tight text-slate {% if type == 'Article' %}bg-salmon{% else %}bg-brightgreen{% endif %}">{{ type }}</span>
+                        <span class="font-basic text-xsm text-white text-opacity-70">{{ article.date | date: "%B %-d, %Y" }}</span>
+                    </div>
+                    <h2 class="pb-3 font-sansmd text-lg font-medium leading-[1.2] tracking-tight text-white">{{ article.data.title }}</h2>
+                    <p class="text-press text-white text-opacity-80">{{ article.data.description }}</p>
+                    <span class="mt-auto pt-5 font-sansmd text-press font-medium text-brightgreen">Read more &rarr;</span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>

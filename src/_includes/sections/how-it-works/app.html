@@ -1,0 +1,108 @@
+<div class="relative w-full overflow-hidden bg-primary pt-16 pb-[min(92vw,32em)] ztablet:pt-24 ztablet:pb-[min(88vw,30em)] zdesktop:py-24">
+    <img
+        src="/assets/branding/logo_symbol.svg"
+        alt=""
+        aria-hidden="true"
+        class="pointer-events-none absolute top-[-4em] right-[-4em] h-[16em] w-auto opacity-[0.08] ztablet:h-[22em]"
+    />
+
+    <!-- Mobile/tablet: full-width image at the bottom, soft vertical fade into green above -->
+    <div
+        class="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-[min(92vw,32em)] zdesktop:hidden"
+        aria-hidden="true"
+    >
+        <img
+            class="h-full w-full object-cover object-[50%_15%]"
+            src="/assets/how-it-works/app_mockup.jpeg"
+            alt=""
+        />
+        <div
+            class="absolute inset-x-0 top-0 h-[22%]"
+            style="background: linear-gradient(to bottom, #1c5141 0%, rgba(28, 81, 65, 0.7) 50%, rgba(28, 81, 65, 0.15) 80%, transparent 100%);"
+        ></div>
+    </div>
+
+    <!-- Desktop: image on the left, narrow edge fade only -->
+    <div
+        class="pointer-events-none absolute inset-y-0 left-0 z-0 hidden overflow-hidden w-[44%] zdesktop:block"
+        aria-hidden="true"
+    >
+        <img
+            class="h-full w-full object-cover object-[22%_center]"
+            src="/assets/how-it-works/app_mockup.jpeg"
+            alt=""
+        />
+        <div
+            class="absolute inset-y-0 right-0 w-[28%]"
+            style="background: linear-gradient(to right, transparent 0%, rgba(28, 81, 65, 0.45) 42%, rgba(28, 81, 65, 0.88) 72%, #1c5141 100%);"
+        ></div>
+    </div>
+
+    <div class="relative m-auto w-[86vw] max-w-7xl">
+        <div class="flex flex-col items-center gap-10 zdesktop:flex-row zdesktop:gap-20">
+            <!-- Spacer to reserve room for the full-bleed image on desktop -->
+            <div class="hidden shrink-0 zdesktop:block zdesktop:w-[40%]" aria-hidden="true"></div>
+
+            <!-- Copy -->
+            <div
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                class="relative w-full pb-20 text-center text-white ztablet:pb-24 zdesktop:w-[60%] zdesktop:pb-0 zdesktop:text-left"
+            >
+                <h2 class="font-sans text-base font-bold leading-[1.5] tracking-tight text-salmon ztablet:pb-2 ztablet:text-lg ztablet:leading-[1]">
+                    The Veranda Dashboard
+                </h2>
+                <h3 class="pb-6 font-sansmd text-lg font-bold leading-[1.2] tracking-tight text-white ztablet:text-lgr">
+                    Every Delivery, In One Place
+                </h3>
+                <p class="pb-8 text-med text-white text-opacity-80 ztablet:text-lg">
+                    Our cloud platform connects you, your couriers, and your favourite retailers in a single system, so every delivery is visible
+                    and access is on your terms.
+                </p>
+
+                <div class="flex flex-col gap-6 text-left">
+                    <!-- Feature 1 -->
+                    <div class="flex items-start gap-4">
+                        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brightgreen bg-opacity-15">
+                            <span class="material-icons text-[22px] text-brightgreen">insights</span>
+                        </div>
+                        <div>
+                            <h4 class="pb-1 font-sansmd text-med font-medium tracking-tight text-white">Watch It Happen In Real Time</h4>
+                            <p class="text-press text-white text-opacity-70">
+                                Temperature, lock status, and box activity update the moment something changes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="flex items-start gap-4">
+                        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brightgreen bg-opacity-15">
+                            <span class="material-icons text-[22px] text-brightgreen">event_repeat</span>
+                        </div>
+                        <div>
+                            <h4 class="pb-1 font-sansmd text-med font-medium tracking-tight text-white">Scheduling That Works Your Way</h4>
+                            <p class="text-press text-white text-opacity-70">
+                                Set repeat schedules, keep the box unlocked for a window, or have it relock itself automatically after use.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="flex items-start gap-4">
+                        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brightgreen bg-opacity-15">
+                            <span class="material-icons text-[22px] text-brightgreen">bluetooth_connected</span>
+                        </div>
+                        <div>
+                            <h4 class="pb-1 font-sansmd text-med font-medium tracking-tight text-white">Your Phone Is Your Key</h4>
+                            <p class="text-press text-white text-opacity-70">
+                                With Bluetooth on, walk up to your box and press the button. Veranda recognizes you and unlocks itself, no codes
+                                or keys required.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

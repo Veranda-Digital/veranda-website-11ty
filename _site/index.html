@@ -45,9 +45,16 @@
         }
     </style>
 
+    
+    
+    
+    
+
     <title>Veranda</title>
     <meta name="description" content="Making food deliveries more convenient, secure, and manageable" />
+    
     <meta name="robots" content="index,follow" />
+    
     <meta name="copyright" content="Nic Durish 2022" />
     <meta name="generator" content="Eleventy" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -60,13 +67,13 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://getveranda.netlify.com" />
     <meta name="twitter:description" content="Making food deliveries more convenient, secure, and manageable" />
-    <meta name="twitter:image" content="" />
+    <meta name="twitter:image" content="https://getveranda.com/public/site_thumb.jpeg" />
 
     <!--Schema-->
     <link rel="author" href="" />
     <link rel="publisher" href="https://getveranda.netlify.com" />
     <meta itemprop="description" content="Making food deliveries more convenient, secure, and manageable" />
-    <meta itemprop="image" content="" />
+    <meta itemprop="image" content="https://getveranda.com/public/site_thumb.jpeg" />
 
     <!-- Facebook OpenGraph -->
     <meta property="og:url" content="https://getveranda.netlify.com" />
@@ -212,8 +219,8 @@
     <div class="bg-primary  ztablet:rounded-bl-[8em]">
         <div class="relative">
             <div class="hero-bg relative"></div>
-            <nav class="z-10 m-auto flex max-w-[120em] justify-between p-4 pb-6 ztablet:py-8 ztablet:px-12">
-    <a href="/" class="z-10">
+            <nav class="z-50 m-auto flex max-w-[120em] justify-between p-4 pb-6 ztablet:py-8 ztablet:px-12">
+    <a href="/" class="z-50">
         <img class="w-28 min-w-[6em] zmobile:w-36 zdesktop:w-52" src="/assets/branding/logo.svg" alt="Veranda Logo" />
     </a>
     <!-- Button which scrolls to bottom -->
@@ -233,25 +240,25 @@
         Sign Up For Updates
     </a> -->
 
-    <!-- Pill container with three buttons -->
+    <!-- Pill container with nav buttons -->
     <div
-        class="fixed right-4 top-5 z-10 hidden space-x-2 rounded-4xl bg-brightgreen px-4 py-2 zdesktop:right-12 zdesktop:top-8 zdesktop:flex zdesktop:px-2 zdesktop:py-2 zuwdesktop:right-[calc(50vw-57em)]"
+        class="fixed right-4 top-5 z-50 hidden space-x-1 rounded-4xl bg-brightgreen px-4 py-2 zdesktop:right-12 zdesktop:top-8 zdesktop:flex zdesktop:px-2 zdesktop:py-2 zuwdesktop:right-[calc(50vw-57em)]"
     >
-        <a href="/" class="rounded-3xl bg-brightgreen px-6 py-2 text-xsm font-semibold text-slate hover:mt-[-0.1em] ztablet:text-base">About Veranda</a>
-        <a href="/press-release/" class="rounded-3xl bg-brightgreen px-6 py-2 text-xsm font-bold text-slate hover:mt-[-0.1em] ztablet:text-base"
-            >Press Release</a
-        >
+        <a href="/" class="rounded-3xl bg-brightgreen px-5 py-2 text-xsm font-semibold text-slate hover:mt-[-0.1em] ztablet:text-base">Veranda</a>
+        <a href="/how-it-works/" class="rounded-3xl bg-brightgreen px-5 py-2 text-xsm font-semibold text-slate hover:mt-[-0.1em] ztablet:text-base">How It Works</a>
+        <a href="/our-team/" class="rounded-3xl bg-brightgreen px-5 py-2 text-xsm font-semibold text-slate hover:mt-[-0.1em] ztablet:text-base">Team</a>
+        <a href="/news/" class="rounded-3xl bg-brightgreen px-5 py-2 text-xsm font-semibold text-slate hover:mt-[-0.1em] ztablet:text-base">News</a>
         <a
             href="https://relentless-builder-3913.ck.page/081cac7ca4"
             data-formkit-toggle="081cac7ca4"
-            class="rounded-3xl bg-black px-6 py-2 text-xsm font-semibold text-brightgreen hover:translate-y-[-0.1em] ztablet:text-base"
+            class="rounded-3xl bg-black px-5 py-2 text-xsm font-semibold text-brightgreen hover:translate-y-[-0.1em] ztablet:text-base"
         >
             Sign Up For Updates
         </a>
     </div>
 
     <!--  Mobile Menu -->
-    <div class="fixed right-4 top-5 z-10">
+    <div class="fixed right-4 top-5 z-50 ztablet:right-12 ztablet:top-8">
         <!-- Hamburger Icon -->
         <button id="menuToggle" class="flex h-10 w-10 items-center justify-center rounded-full bg-brightgreen zdesktop:hidden">
             <div id="hamburger" class="space-y-1">
@@ -262,9 +269,11 @@
         </button>
 
         <!-- Mobile Dropdown Menu -->
-        <div id="mobileMenu" class="fixed top-20 right-4 flex hidden flex-col space-y-6 rounded-2xl bg-brightgreen p-4 zdesktop:hidden">
+        <div id="mobileMenu" class="fixed top-20 right-4 ztablet:top-24 ztablet:right-12 flex hidden flex-col space-y-6 rounded-2xl bg-brightgreen p-4 zdesktop:hidden">
             <a href="/" class="px-2 text-base font-bold tracking-tight text-slate hover:mt-[-0.2em]"> About Veranda </a>
-            <a href="/press-release/" class="px-2 text-base font-bold tracking-tight text-slate hover:mt-[-0.2em]"> Press Release </a>
+            <a href="/how-it-works/" class="px-2 text-base font-bold tracking-tight text-slate hover:mt-[-0.2em]"> How It Works </a>
+            <a href="/our-team/" class="px-2 text-base font-bold tracking-tight text-slate hover:mt-[-0.2em]"> Our Team </a>
+            <a href="/news/" class="px-2 text-base font-bold tracking-tight text-slate hover:mt-[-0.2em]"> News </a>
             <a
                 href="https://relentless-builder-3913.ck.page/081cac7ca4"
                 data-formkit-toggle="081cac7ca4"
@@ -528,7 +537,7 @@ Introducing <b>Veranda</b>, the world’s most sensible delivery system.
                     </h2>
                     <h3 class="pb-8 font-sansmd text-lg font-bold leading-[1.2] tracking-tight ztablet:text-lgr">Testing, prototyping, and testing some more</h3>
                 </div>
-                <div class="pb-10 text-med ztablet:text-lgr"><p>Sign up to receive updates and availability of the Veranda System.</p></div>
+                <div class="pb-10 text-med ztablet:text-lgr"><p>Sign up to receive updates and availability announcements for the Veranda System.</p></div>
                 <div class="text-center"><!-- GetForm Integration -->
 <!-- <form class="" action="https://getform.io/f/a89976b0-eaf0-43a1-8223-6d626a50172e" method="POST">
     <input
@@ -571,9 +580,7 @@ Introducing <b>Veranda</b>, the world’s most sensible delivery system.
     <div class="flex flex-col-reverse justify-around ztablet:flex-row">
         <p class="text-center font-basic text-xsm ztablet:text-sm">US Patent Pending</p>
         <p class="pb-2 text-center font-basic text-xsm ztablet:text-sm">Copyright © 2026 Veranda Digital Inc.</p>
-        <a href="mailto:contact@getveranda.com" class="pb-2 text-center font-basic text-xsm hover:text-salmon ztablet:pb-0 ztablet:text-sm"
-            >contact@getveranda.com</a
-        >
+        <a href="/privacy-policy/" class="pb-2 text-center font-basic text-xsm hover:text-salmon ztablet:pb-0 ztablet:text-sm">Privacy Policy</a>
     </div>
 </div>
 </footer>

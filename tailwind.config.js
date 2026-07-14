@@ -2,8 +2,8 @@
 module.exports = {
     mode: 'jit',
     content: [
-        './src/**/*.{html,js,jsx,ts,tsx}', // Include source files
-        './public/**/*.html' // Include public HTML files
+        './src/**/*.{html,js,jsx,ts,tsx,md}',
+        './public/**/*.html'
     ],
     safelist: ['text-xxxxlg', '80vw'],
     plugins: [],

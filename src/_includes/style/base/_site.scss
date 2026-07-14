@@ -1,3 +1,19 @@
+#news-article ul {
+    list-style-type: disc;
+    margin: 1.25rem 0 1.5rem;
+    padding-left: 1.5rem;
+
+    li {
+        display: list-item;
+        list-style-type: disc;
+        margin-bottom: 1rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
 mark {
     background-color: #f4d379;
     color: #1c5141;
@@ -48,6 +64,39 @@ mark {
     background-size: 100%;
     background-repeat: no-repeat;
     opacity: 0.7;
+}
+
+.tech-bg {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: max(100vw, 100vh);
+    background-image: url('../assets/bg/tech_bg.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right top;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.watermark-symbol {
+    position: absolute;
+    background-image: url('../assets/branding/logo_symbol.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.06;
+    pointer-events: none;
+}
+
+.fade-frame {
+    mask-image: radial-gradient(ellipse 68% 62% at 50% 50%, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 0) 88%);
+    -webkit-mask-image: radial-gradient(ellipse 68% 62% at 50% 50%, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 0) 88%);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+}
+
+.drop-shadow-lock {
+    filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.18));
 }
 a {
     -webkit-transition: all 0.2s ease;

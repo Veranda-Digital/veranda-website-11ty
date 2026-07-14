@@ -43,9 +43,22 @@
         }
     </style>
 
+    {% assign defaultPreviewImage = 'https://getveranda.com/public/site_thumb.jpeg' %}
+    {% assign socialImage = image | default: defaultPreviewImage %}
+    {% if tags contains 'news' and heroImage %}
+        {% assign socialImage = heroImage %}
+    {% endif %}
+    {% unless socialImage contains '://' %}
+        {% assign socialImage = socialImage | prepend: 'https://getveranda.com' %}
+    {% endunless %}
+
     <title>{{ title | default: site.title }}</title>
     <meta name="description" content="{{ description | default: site.description }}" />
+    {% if draft %}
+    <meta name="robots" content="noindex,nofollow" />
+    {% else %}
     <meta name="robots" content="index,follow" />
+    {% endif %}
     <meta name="copyright" content="Nic Durish 2022" />
     <meta name="generator" content="Eleventy" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -60,19 +73,19 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="{{ url | default: site.url }}" />
     <meta name="twitter:description" content="{{ description | default: site.description }}" />
-    <meta name="twitter:image" content="{{ image | default: site.cover_image }}" />
+    <meta name="twitter:image" content="{{ socialImage }}" />
 
     <!--Schema-->
     <link rel="author" href="{{ author | default: site.author }}" />
     <link rel="publisher" href="{{ site.url }}" />
     <meta itemprop="description" content="{{ description | default: site.description }}" />
-    <meta itemprop="image" content="{{ image | default: site.cover_image }}" />
+    <meta itemprop="image" content="{{ socialImage }}" />
 
     <!-- Facebook OpenGraph -->
     <meta property="og:url" content="{{ url | default: site.url }}" />
     <meta property="og:type" content="{{ type | default: 'article' }}" />
-    <meta property="og:image" content="{{ image | default: 'https://getveranda.com/public/site_thumb.jpeg' }}" />
-    <meta property="og:image:url" content="{{ image | default: 'https://getveranda.com/public/site_thumb.jpeg' }}" />
+    <meta property="og:image" content="{{ socialImage }}" />
+    <meta property="og:image:url" content="{{ socialImage }}" />
     <meta property="og:description" content="{{ description | default: site.description }}" />
     <meta property="og:site_name" content="{{ site.title }}" />
     <meta property="og:locale" content="{{ site.lang }}" />
